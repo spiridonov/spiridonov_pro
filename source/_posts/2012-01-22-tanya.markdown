@@ -2,20 +2,11 @@
 author: Stanislav
 date: '2012-01-22 12:49:31'
 layout: post
-slug: tanya
-status: publish
-title: '[Портреты] Таня Т.'
-wordpress_id: '631'
-categories:
-- art
-tags:
-- карандаш
-- портрет
+title: 'Портреты / Таня Т.'
+language: ru
 ---
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/03/001-2__-1280-363x500.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/03/001-2__-1280.jpg)
+[{% img center no-border /images/drawings/tt_500.jpg %}](/images/drawings/tt.jpg)
 
 Портрет ещё не доехал до своей будущей хозяйки, но я всё равно решил выложить.
 Не удержался, ведь сегодня такое прекрасное, солнечное, воскресное утро!:)

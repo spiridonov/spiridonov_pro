@@ -2,23 +2,11 @@
 author: Stanislav
 date: '2011-11-25 06:53:58'
 layout: post
-slug: yana
-status: publish
-title: '[Портреты] Яна'
-wordpress_id: '484'
-categories:
-- art
-tags:
-- карандаш
-- портрет
+title: 'Портреты / Яна C.'
+language: ru
 ---
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/03/ys2-353x500.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/03/ys2.jpg)
+[{% img center no-border /images/drawings/ys2_500.jpg %}](/images/drawings/ys2.jpg)
 
-_(Картинка, как всегда, кликабельна)_
-
-Яна - живое воплощение моего представления об идеальной девушке в вакууме (не
-сферической) :)
+Яна - живое воплощение моей идеальной девушки в вакууме (не сферической) :)
 

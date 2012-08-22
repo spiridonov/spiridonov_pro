@@ -1,9 +1,8 @@
 ---
-author: Stanislav
-date: '2012-05-31 01:17:03'
 layout: post
 title: Музей техники Apple
 language: ru
+comments: true
 ---
 
 Я как правильный фанбой должен был сходить и поклониться своему яблочному

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-language: en
+title: Обо мне
+language: ru
 ---
 
 My name is Stanislav Spiridonov. I`m a

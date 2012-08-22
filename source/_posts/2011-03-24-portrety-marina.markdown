@@ -2,7 +2,7 @@
 author: Stanislav
 date: '2011-03-24 01:20:03'
 layout: post
-title: 'Портреты / Марина'
+title: 'Портреты / Марина И.'
 language: ru
 ---
 
