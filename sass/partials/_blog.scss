@@ -38,17 +38,21 @@ article {
   img, video, .flash-video {
     @extend .flex-content;
     @extend .basic-alignment;
+    // @include shadow-box($border: #aaa 1px solid, $shadow: rgba(#000, .25) 0 2px 10px, $border-radius: .3em);
+    // padding: .25em;
+    // background-color: #fff;
+  }
+  .border {
     @include shadow-box($border: #aaa 1px solid, $shadow: rgba(#000, .25) 0 2px 10px, $border-radius: .3em);
     padding: .25em;
     background-color: #fff;
-  }
-  .no-border {
-    border: none;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-    padding: 0;
+    
+    // border: none;
+    // border-radius: 0;
+    // -moz-border-radius: 0;
+    // box-shadow: none;
+    // background: transparent;
+    // padding: 0;
   }
   video, .flash-video { margin: 0 auto 1.5em; }
   video { display: block; width: 100%; }
