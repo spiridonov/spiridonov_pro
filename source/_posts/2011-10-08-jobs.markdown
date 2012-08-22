@@ -1,0 +1,25 @@
+---
+author: Stanislav
+date: '2011-10-08 21:41:20'
+layout: post
+slug: jobs
+status: publish
+title: '[Портреты] Steve Jobs'
+wordpress_id: '444'
+categories:
+- art
+tags:
+- steve jobs
+- джобс
+- карандаш
+- портрет
+---
+
+[![](http://spiridonov.pro/wp-
+content/uploads/2011/10/001_1280-363x500.jpg)](http://spiridonov.pro/wp-
+content/uploads/2011/10/001_1280.jpg)
+
+_(Картинка кликабельна)_
+
+Стив Джобс. Мой единственный кумир...
+

@@ -44,11 +44,16 @@ body {
 h1 {
   font-size: $h1;
   line-height: 1.2em;
+  @media only screen and (min-width: 250px) {
+    font-size: 2em; line-height: 1.2em; 
+  }  
+  @media only screen and (min-width: 650px) {
+    font-size: 2.2em; line-height: 1.2em; 
+  }
+  @media only screen and (min-width: 850px) {
+    font-size: 2.6em; line-height: 1.2em; 
+  }
   //text-shadow: #fff 0 2px 0;
-}
-
-@media only screen and (min-width: 850px) {
-  h1 { font-size: 2.6em; line-height: 1.2em; }
 }
 
 #{headings()}{

@@ -1,0 +1,13 @@
+---
+author: Stanislav
+date: '2012-01-31 22:06:37'
+layout: post
+title: 'Портреты / Полина А.'
+language: ru
+---
+
+[{% img center no-border /images/drawings/pa_500.jpg %}](/images/drawings/pa.jpg)
+
+Очаровательная Полина из Екатеринбурга. Умна, красива, трудолюбива, музыкальна
+и очень талантлива!
+
