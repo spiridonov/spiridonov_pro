@@ -4,10 +4,10 @@ date: '2012-01-22 12:49:31'
 layout: post
 title: 'Портреты / Таня Т.'
 language: ru
+comments: true
 ---
 
-[{% img center no-border /images/drawings/tt_500.jpg %}](/images/drawings/tt.jpg)
+[{% img center /images/drawings/tt_500.jpg %}](/images/drawings/tt.jpg)
 
 Портрет ещё не доехал до своей будущей хозяйки, но я всё равно решил выложить.
 Не удержался, ведь сегодня такое прекрасное, солнечное, воскресное утро!:)
-

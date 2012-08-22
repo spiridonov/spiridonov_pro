@@ -1,12 +1,11 @@
 ---
-author: Stanislav
-date: '2012-02-19 09:26:24'
 layout: post
 language: ru
 title: С днём рождения:)
+comments: true
 ---
 
-{% img center no-border /images/birthday2012/dog.jpg %}
+{% img center /images/birthday2012/dog.jpg %}
 
 Сегодня у меня день рождения:) У spiridonov.pro тоже - домену годик.
 

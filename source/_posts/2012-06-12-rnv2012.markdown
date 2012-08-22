@@ -1,16 +1,11 @@
 ---
-author: Stanislav
-date: '2012-06-12 15:42:10'
 layout: post
-slug: rnv2012
-status: publish
 title: Рок над Волгой 2012
 language: ru
+comments: true
 ---
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1067-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1067.jpg)
+{% img center /images/rnv2012/IMG_1067-500x375.jpg %}
 
 Вчера под Самарой прошёл фестиваль Рок над Волгой. Это замечательная
 возможность увидеть таких звёзд как Zaz, Garbage и, конечно же, Limp Bizkit.
@@ -19,13 +14,9 @@ content/uploads/2012/06/IMG_1067.jpg)
 Я много писать тут не буду, да и фоток у меня тоже немного. Зато эмоций и
 впечатлений море:)  Народу было чуть больше, чем дофига. Думаю, даже больше,
 чем в прошлом году. С погодой нереально повезло: было сухо (не как в прошлом
-году) и вообще не жарко (не как на первых фестах)! [![](http://spiridonov.pro
-/wp-content/uploads/2012/06/IMG_0881-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0881.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0883-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0883.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1054-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1054.jpg)
+году) и вообще не жарко (не как на первых фестах)!
+
+{% img center /images/rnv2012/IMG_1054-375x500.jpg %}
 
 Мы приехали во время выступления Аквариума. Когда добрались до более-менее
 удобной позиции поближе к сцене — начали играть Шнур и кампания. С каждой
@@ -40,11 +31,7 @@ content/uploads/2012/06/IMG_1054.jpg)
 что ведущие не просто так вынуждены говорить по 10 минут между выступлениями.
 Все орут и требуют артистов на сцену. Вообще-то надо разобрать оборудование
 предыдущих артистов и выкатить новое, всё собрать и подключить. Но это никого
-не волнует, все требуют Алису:) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0945-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0945.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0956-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0956.jpg)
+не волнует, все требуют Алису:)
 
 Ленинград жгли. Жгли, как обычно, с матами, ололо, неповторимой горластой
 Юлией и с огромным духовым оркестром.
@@ -54,37 +41,29 @@ content/uploads/2012/06/IMG_0956.jpg)
 
 Zaz играла мало, а жаль. Лучше бы вместо Алисы поставили:) Она была бодра и
 весела. Кто-то из фанатов даже на такой говно-опэнэйр принёс ей букет роз:) Но
-так и не вручил... [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0908-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0908.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0937-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0937.jpg)
+так и не вручил...
+
+{% img center /images/rnv2012/IMG_0937-500x375.jpg %}
 
 Мой тёзка, Святослав Вакарчук, никак не мог удержаться в одежде, постоянно
 выпрыгивал из неё, показывал то свои бицепсы, то пресс:) А в перерывах между
 этим пел. Пел мощно и круто старые хиты, которые я лет 10 назад слушал.
-[![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0985-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0985.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0976-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_0976.jpg)
+
+{% img center /images/rnv2012/IMG_0976-500x375.jpg %}
 
 Растеряев — красавчик парень! Выполнял, кстати, ответственную миссию. Ему из
 оборудования нужен только микрофон и стул. И пока он быстро вышел и играл —
 техники собирали сэт для Garbage:) В прошлом году эту миссию выполнял Мамонов
 — ему тоже кроме гитары ничего не надо, и во врея его выступления собирали сэт
-Skunk Anansie. [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1018-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1018.jpg)
+Skunk Anansie.
+
+{% img center /images/rnv2012/IMG_1018-500x375.jpg %}
 
 Ширли Мэнсон и команда играли бодро и чётко! А басист вообще красавчик — вот
 так должен быть одет настоящий рокер:) А ещё я не понял, почему группа
 выступала на фоне логотипа Google+, только без плюса:)
-[![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1030-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1030.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1038-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1038.jpg)
+
+{% img center /images/rnv2012/IMG_1038-500x375.jpg %}
 
 Так, ну про Алису я всё уже сказал:) Унылые, тупые и однообразные песни. А
 пафос при этом зашкаливает.
@@ -100,15 +79,17 @@ content/uploads/2012/06/IMG_1038.jpg)
 адекватные — мяситься с ними было приятно и безопасно. Вид отсюда был хороший,
 до басиста рукой подать, Фрэд спускался к ограждению (это было от меня метрах
 в 2-3). Несколько раз пробегал Борланд со своей голой красной задницей.
-[![](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1081-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2012/06/IMG_1081.jpg)
+
+{% img center /images/rnv2012/IMG_1081-500x375.jpg %}
 
 Я много не фоткал — мяситься с телефоном в руке то ещё удовольствие, я вам
 скажу:) Однако всё вполне реально. Но я не мог не снять финальный замес на
 Take a look around! Рожа в зелёной кепке — это я, если чё:)
 
+<iframe width="640" height="360" src="http://www.youtube.com/embed/4ukIta0wEio?rel=0" frameborder="0" allowfullscreen></iframe>
   
 Вобщем, было супер! Ждём следующий год. Даёшь больше крутых американских
 команд!:)
+
+[Фотки на Фликре](http://www.flickr.com/photos/81180507@N08/sets/72157631140671796/)
 

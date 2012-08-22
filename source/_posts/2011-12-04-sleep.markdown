@@ -1,9 +1,8 @@
 ---
-author: Stanislav
-date: '2011-12-04 11:12:41'
 layout: post
 title: Сладкие сны
 language: ru
+comments: true
 ---
 
 У каджого уважающего себя автора обязательно должна быть статья про
