@@ -3,6 +3,7 @@ author: Stanislav
 date: '2011-03-30 22:12:51'
 layout: page
 title: My drawings
+comments: true
 ---
 
 [{% img border /images/drawings/al2_250.jpg %}](/images/drawings/al2.jpg)
