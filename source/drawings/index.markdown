@@ -2,6 +2,7 @@
 layout: page
 title: My drawings
 comments: true
+language: en
 ---
 
 [{% img border /images/drawings/al2_250.jpg Alexandra L. 2012 %}](/images/drawings/al2.jpg)
