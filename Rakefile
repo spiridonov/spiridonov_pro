@@ -11,7 +11,11 @@ ssh_user       = "user@domain.com"
 ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = true
-deploy_default = "rsync"
+
+deploy_default = "s3"
+
+## -- S3 Deploy config -- ##
+s3_bucket = "spiridonov.pro"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -208,6 +212,12 @@ end
 ##############
 # Deploying  #
 ##############
+
+desc "Deploy website via s3cmd"
+task :s3 do
+  puts "## Deploying website via s3cmd"
+  ok_failed system("s3cmd sync --acl-public --reduced-redundancy public/* s3://#{s3_bucket}/")
+end
 
 desc "Default deploy task"
 task :deploy do
