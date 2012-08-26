@@ -1,4 +1,9 @@
 <p>
-  Copyright &copy; 2011-2012 - {{ site.author }} -
+  {% if page.language == 'ru' %}
+  &copy; 2012 - Станислав Спиридонов -
+  <span class="credit">Блог крутится на <a href="http://octopress.org">Octopress</a></span>
+  {% else %}
+  &copy; 2012 - Stanislav Spiridonov -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+  {% endif %}
 </p>
