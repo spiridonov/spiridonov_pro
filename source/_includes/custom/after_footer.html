@@ -1,3 +1,14 @@
-{% comment %}
-  Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
-{% endcomment %}
+{% if page.audio %}
+<script>
+  $('audio').mediaelementplayer({
+    // width of audio player
+    audioWidth: '100%',
+    // height of audio player
+    audioHeight: 30,
+    // force iPad's native controls
+    iPadUseNativeControls: true,
+    // force iPhone's native controls
+    iPhoneUseNativeControls: true 
+  });
+</script>
+{% endif %}

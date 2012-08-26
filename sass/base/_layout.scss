@@ -82,8 +82,12 @@ body {
   }
   > header {
     @media only screen and (min-width: 250px) {
-      padding-top: $header-padding-top * 5;
-      padding-bottom: $header-padding-bottom * 7;
+      padding-top: $header-padding-top * 9;
+      padding-bottom: $header-padding-bottom * 14;
+    }
+    @media only screen and (min-width: 500px) {
+      padding-top: $header-padding-top * 2;
+      padding-bottom: $header-padding-bottom * 4;
     }
     @media only screen and (min-width: 650px) {
       padding-top: $header-padding-top;
@@ -131,7 +135,10 @@ body.sidebar-footer {
 }
 
 @media only screen and (min-width: 250px) {
-  body > header { font-size: 0.45em; }
+  body > header { font-size: 0.3em; }
+}
+@media only screen and (min-width: 500px) {
+  body > header { font-size: 0.7em; }
 }
 @media only screen and (min-width: 650px) {
   body > header { font-size: $header-font-size; }
