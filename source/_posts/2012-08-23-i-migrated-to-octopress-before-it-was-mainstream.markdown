@@ -35,7 +35,9 @@ ENV['LC_CTYPE'] = 'ru_RU.UTF-8'
 ENV['LANG'] = 'ru_RU.UTF-8'
 {% endcodeblock %}
 
-There are also a lot of small fixes I made. I don\`t want to describe all of them here. You can find full sources on my GitHub page, if you want.
+After I got tons of converted markdown files I had to fix them all. Almost all defects were about images, but there were also layout and links defects.
+
+There are also a lot of small fixes I made in my code. I don\`t want to describe all of them here. You can find full sources on my GitHub page, if you want.
 
 ##Dual Language
 
