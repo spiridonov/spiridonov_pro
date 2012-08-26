@@ -91,7 +91,7 @@ delicious_count: 3
 # Disqus Comments
 disqus_short_name: spiridonov-pro
 disqus_show_comment_count: false
-disqus_developer: 1
+# disqus_developer: 1
 
 # Google Analytics
 google_analytics_tracking_id:
