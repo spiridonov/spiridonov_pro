@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-03-11 21:45:16'
+date: 2011-03-11 21:45
 layout: post
-slug: nakrutka-golosov-na-php-na-palcax
-status: publish
 title: Накрутка голосов на PHP на пальцах
-wordpress_id: '16'
-categories:
-- Технологии
-tags:
-- apoll
-- http
-- php
-- wireshark
+comments: true
+language: ru
 ---
 
 Мои знакомые постоянно участвуют в различных конкурсах. При этом они

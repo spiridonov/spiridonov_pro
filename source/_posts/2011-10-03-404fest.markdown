@@ -1,29 +1,17 @@
 ---
-author: Stanislav
-date: '2011-10-03 22:47:39'
+date: 2011-10-03 22:47
 layout: post
-slug: 404fest
-status: publish
 title: Отчёт о 404fest
-wordpress_id: '426'
-categories:
-- life
-tags:
-- 404fest
-- конференция
-- Максим Спиридонов
-- Самара
+comments: true
+language: ru
 ---
 
-![](http://spiridonov.pro/wp-content/uploads/2011/10/IMG_3654-500x333.jpg)
+{% img center /images/404fest2011/logo.jpg %}
 
 На выходных прошёл четвёртый фестиваль веб-разработчиков, интернет-деятелей и
 сочувствующих им 404 Фест.
 
-  
-
 ## День 0
-
   
 Для меня фест начался на день раньше. Мне довелось поучаствовать в подготовке
 отеля к предстоящему фестивалю. Для меня очень приятным и полезным оказалось
@@ -32,8 +20,7 @@ tags:
 работы в отеле, тем не менее, было дофига. Но мы всё равно переодически
 останавливались и «накатывали»:)
 
-![](http://spiridonov.pro/wp-
-content/uploads/2011/10/small_IMG_3393-500x334.jpg)
+{% img center /images/404fest2011/me_preparing.jpg %}
 
 Днём я договорился с Максимом Спиридоновым показать ему Самару, в меру
 возможностей и времени. Я очень волновался, пытался представить нашу встречу и
@@ -55,7 +42,6 @@ content/uploads/2011/10/small_IMG_3393-500x334.jpg)
 
 ## День 1
 
-  
 На открытии зажигал Кураж Бамбей! Народ тёк и стонал, когда он говорил
 «крутотенюшка» и «бугагашенька» :)
 
@@ -71,7 +57,6 @@ content/uploads/2011/10/small_IMG_3393-500x334.jpg)
 между постоянным стартом всё новых и новых проектов и «делом всей жизни».
 
 ## День 2
-
   
 День мой начался с доклада Алексея Шевелёва о Хабрахабре. Потом зажигал Кураж
 Бамбей. После этого я перебежал на мобильную секцию.
@@ -89,7 +74,6 @@ content/uploads/2011/10/small_IMG_3393-500x334.jpg)
 
 ## Люди
 
-  
 404 - это замечательная возможность увидеть таких известных людей в одном
 месте всего за пару дней! Увидеть, можеть быть даже потрогать и пообщаться :)
 Мой список расширился по сравнению с прошлым годом новыми людьми.
@@ -102,22 +86,16 @@ content/uploads/2011/10/small_IMG_3393-500x334.jpg)
 
 ## Полезные ссылки
 
-  
-Основную инфу по фестивалю можно найти на [офф
-сайте](http://http://2011.404fest.ru/). Там же через некоторое время должны
-появиться видео с докладов.
+Основную инфу по фестивалю можно найти на [оффсайте](http://http://2011.404fest.ru/). Там же через некоторое время должны появиться видео с докладов.
 
-На samara-tech.ru есть отчёт за [1 день](http://www.samara-
-tech.ru/news/events/3989-v-samare-zavershilsja-pervyj-den-festivalja-404) и [2
-день](http://www.samara-tech.ru/news/events/3990-festival-404--den-vtoroj-
-skaz-o-tom-kak-mer-samary-s-veb-razrabotchikami-poobschalsja).
+На samara-tech.ru есть отчёт за [1 день](http://www.samara-tech.ru/news/events/3989-v-samare-zavershilsja-pervyj-den-festivalja-404) и [2 день](http://www.samara-tech.ru/news/events/3990-festival-404--den-vtoroj-skaz-o-tom-kak-mer-samary-s-veb-razrabotchikami-poobschalsja).
 
 Фотоотчёты:
 
-  * [Фотоотчёт от @kukaev на Пикасе](https://picasaweb.google.com/102958452505670086518/404fest2011#)
-  * [Альбом Доминиона на Фликре](http://www.flickr.com/photos/st-dominion/sets/72157627682940661/)
-  * **UPD1:** [Фотоотчёт о подготовке от @sv_bob](http://sv-bob.livejournal.com/336377.html)
-  * **UPD2:** [Отчёт Севы Денисенко](https://picasaweb.google.com/113373230160482105058/2011404fest?authkey=Gv1sRgCO_upL3j353ZHQ)
+* [Фотоотчёт от @kukaev на Пикасе](https://picasaweb.google.com/102958452505670086518/404fest2011#)
+* [Альбом Доминиона на Фликре](http://www.flickr.com/photos/st-dominion/sets/72157627682940661/)
+* [Фотоотчёт о подготовке от @sv_bob](http://sv-bob.livejournal.com/336377.html)
+* [Отчёт Севы Денисенко](https://picasaweb.google.com/113373230160482105058/2011404fest?authkey=Gv1sRgCO_upL3j353ZHQ)
   
 Ещё много всего интересного проскакивает в твиттере по хэштэгу #404fest.
 

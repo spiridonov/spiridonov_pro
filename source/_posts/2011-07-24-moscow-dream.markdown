@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-07-24 13:12:35'
+date: 2011-07-24 13:12
 layout: post
-slug: moscow-dream
-status: publish
-title: ' Рай на земле есть! Всего 140 тысяч за кв. метр'
-wordpress_id: '294'
-categories:
-- life
-tags:
-- география
-- марфино
-- москва
-- путешествие
+title: Рай на земле есть! Всего 140 тысяч за кв. метр
+comments: true
+language: ru
 ---
 
 [![](http://spiridonov.pro/wp-

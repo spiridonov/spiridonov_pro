@@ -1,18 +1,9 @@
 ---
-author: Stanislav
 date: '2012-06-12 18:59:52'
 layout: post
-slug: msdevcon
-status: publish
 title: Отчёт о MS DevCon`12
-wordpress_id: '731'
-categories:
-- life
-tags:
-- msdevcon
-- конференция
-- москва
-- путешествие
+comments: true
+language: ru
 ---
 
 Как меня занесло на майкрософтовскую конференцию? Всё просто — я был самым

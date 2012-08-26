@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-08-11 21:33:34'
+date: 2011-08-11 21:33
 layout: post
-slug: pedalboard
-status: publish
 title: Кейс для педалей
-wordpress_id: '318'
-categories:
-- life
-tags:
-- handmade
-- гитара
-- педалборд
-- педали
+comments: true
+language: ru
 ---
 
 Педалей в последнее время у меня становится всё больше. Недавно я купил блок

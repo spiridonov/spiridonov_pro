@@ -1,20 +1,9 @@
 ---
-author: Stanislav
-date: '2012-07-01 16:00:34'
+date: 2012-07-01 16:00
 layout: post
-slug: korn
-status: publish
 title: '[Каверы] KoЯn – Blind'
-language: en
-categories:
-- Моя музыка
-tags:
-- blind
-- cover
-- korn
-- leap second
-- гитара
-- каверы
+language: ru
+comments: true
 ---
 
 [Korn](http://spiridonov.pro/audio/Korn_Blind.mp3)

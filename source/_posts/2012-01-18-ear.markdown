@@ -1,6 +1,6 @@
 ---
 author: Stanislav
-date: '2012-01-18 11:05:09'
+date: 2012-01-18 11:05
 layout: post
 title: Берегите уши
 language: ru

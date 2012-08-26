@@ -1,6 +1,5 @@
 ---
-author: Stanislav
-date: '2011-03-24 01:20:03'
+date: 2011-03-24 01:20
 layout: post
 title: 'Портреты / Марина И.'
 language: ru

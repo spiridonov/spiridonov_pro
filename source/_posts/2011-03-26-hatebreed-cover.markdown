@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-03-26 01:40:52'
+date: 2011-03-26 01:40
 layout: post
-slug: hatebreed-cover
-status: publish
-title: '[Каверы] Hatebreed - Undiminished'
-wordpress_id: '54'
-categories:
-- Моя музыка
-tags:
-- cover
-- hatebreed
-- гитара
-- каверы
+title: Каверы / Hatebreed - Undiminished
+comments: true
+language: ru
 ---
 
 [Undiminished](http://spiridonov.pro/audio/Hatebreed_Undiminished.mp3)

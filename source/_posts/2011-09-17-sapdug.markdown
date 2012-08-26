@@ -1,23 +1,9 @@
 ---
-author: Stanislav
-date: '2011-09-17 20:04:08'
+date: 2011-09-17 20:04
 layout: post
-slug: sapdug
-status: publish
 title: Отчёт о второй встрече SAPDUG
-wordpress_id: '383'
-categories:
-- Технологии
-tags:
-- allocator
-- apple
-- iphone
-- objective-c
-- qa
-- sapdug
-- конференция
-- программирование
-- Самара
+comments: true
+language: ru
 ---
 
 В Самаре есть замечательное сообщество SAPDUG - Samara Apple Developer User

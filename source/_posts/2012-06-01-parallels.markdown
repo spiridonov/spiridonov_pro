@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2012-06-01 12:38:43'
+date: 2012-06-01 12:38
 layout: post
-slug: parallels
-status: publish
 title: В гостях у Parallels
-wordpress_id: '724'
-categories:
-- life
-tags:
-- apple
-- parallels
-- офис
-- путешествие
+comments: true
+language: ru
 ---
 
 Обзоры офисов – это отдельный особый жанр. У меня совсем нет опыта в описании
@@ -124,4 +115,6 @@ content/uploads/2012/06/IMG_0568-375x500.jpg)](http://spiridonov.pro/wp-
 content/uploads/2012/06/IMG_0568.jpg)
 
 Спасибо за экскурсию и за общение! Было супер:)
+
+[Фотки на Фликре](http://www.flickr.com/photos/stas_spiridonov/sets/72157631141171016/)
 

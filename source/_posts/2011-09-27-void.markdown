@@ -1,19 +1,9 @@
 ---
-author: Stanislav
-date: '2011-09-27 19:44:07'
+date: 2011-09-27 19:44
 layout: post
-slug: void
-status: publish
 title: Бесцельные люди
-wordpress_id: '416'
-categories:
-- life
-tags:
-- жизнь
-- мотивация
-- овощи
-- поток сознания
-- философия
+comments: true
+language: ru
 ---
 
 Я точно не знаю, как это назвать - «бесцельные», «бессмысленные» или может

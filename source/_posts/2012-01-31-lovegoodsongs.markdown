@@ -1,6 +1,6 @@
 ---
 author: Stanislav
-date: '2012-01-31 22:06:37'
+date: 2012-01-31 22:06
 layout: post
 title: 'Портреты / Полина А.'
 language: ru

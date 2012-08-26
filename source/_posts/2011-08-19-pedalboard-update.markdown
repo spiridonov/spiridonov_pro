@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-08-19 22:06:12'
+date: 2011-08-19 22:06
 layout: post
-slug: pedalboard-update
-status: publish
 title: Апдейт ящика
-wordpress_id: '370'
-categories:
-- life
-tags:
-- handmade
-- гитара
-- педалборд
-- педали
+comments: true
+language: ru
 ---
 
 [![](http://spiridonov.pro/wp-

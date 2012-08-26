@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-09-17 17:07:37'
+date: 2011-09-17 17:07
 layout: post
-slug: pollution
-status: publish
 title: Производить мусор
-wordpress_id: '377'
-categories:
-- life
-tags:
-- бумага
-- мусор
-- реклама
-- философия
+comments: true
+language: ru
 ---
 
 Есть тысяча вещей, которые я считаю абсолютно бесполезными. В топе находятся

@@ -1,16 +1,9 @@
 ---
-author: Stanislav
-date: '2011-07-07 22:10:08'
+date: 2011-07-07 22:10
 layout: post
-slug: macbookpro
-status: publish
 title: Церковь Святого Стива
-wordpress_id: '251'
-categories:
-- life
-tags:
-- apple
-- macbook
+comments: true
+language: ru
 ---
 
 [![](http://spiridonov.pro/wp-

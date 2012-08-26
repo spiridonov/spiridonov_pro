@@ -1,16 +1,9 @@
 ---
-author: Stanislav
-date: '2011-04-28 17:54:53'
+date: 2011-04-28 17:54
 layout: post
-slug: muzyka-dengi-i-xleb
-status: publish
 title: Музыка, деньги и хлеб
-wordpress_id: '160'
-categories:
-- life
-tags:
-- деньги
-- музыка
+comments: true
+language: ru
 ---
 
 Я тут совсем недавно ныл на музыкальную тематику. А вот сегодня нашёл

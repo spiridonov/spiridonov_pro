@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-05-10 00:57:42'
+date: 2011-05-10 00:57
 layout: post
-slug: android-may-days
-status: publish
 title: Отчёт о Android May Days
-wordpress_id: '174'
-categories:
-- Технологии
-tags:
-- android
-- xp party
-- конференция
-- программирование
+comments: true
+language: ru
 ---
 
 Я продолжаю расширять своё сознание. Даже поверхностное знакомство со многими

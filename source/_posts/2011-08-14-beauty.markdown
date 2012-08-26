@@ -1,17 +1,9 @@
 ---
-author: Stanislav
-date: '2011-08-14 21:50:42'
+date: 2011-08-14 21:50
 layout: post
-slug: beauty
-status: publish
 title: О красивых женщнах
-wordpress_id: '335'
-categories:
-- life
-tags:
-- девушки
-- красота
-- портрет
+comments: true
+language: ru
 ---
 
 Сейчас ехал в автобусе в Самару. Рядом сидела симпатичная девушка. А поскольку

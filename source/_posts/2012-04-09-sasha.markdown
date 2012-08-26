@@ -1,6 +1,6 @@
 ---
 author: Stanislav
-date: '2012-04-09 23:55:58'
+date: 2012-04-09 23:55
 layout: post
 title: 'Портреты / Саша Л.'
 language: ru

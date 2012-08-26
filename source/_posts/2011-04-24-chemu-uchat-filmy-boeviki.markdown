@@ -1,16 +1,9 @@
 ---
-author: Stanislav
-date: '2011-04-24 15:58:08'
+date: 2011-04-24 15:58
 layout: post
-slug: chemu-uchat-filmy-boeviki
-status: publish
 title: Чему учат фильмы-боевики?
-wordpress_id: '155'
-categories:
-- life
-tags:
-- кино
-- совет
+comments: true
+language: ru
 ---
 
 Каждый раз, когда я смотрю какой нибудь голливудский боевик и вижу, как герои

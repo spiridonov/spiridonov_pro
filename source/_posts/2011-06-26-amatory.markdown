@@ -1,18 +1,9 @@
 ---
-author: Stanislav
-date: '2011-06-26 16:31:22'
+date: 2011-06-26 16:31
 layout: post
-slug: amatory
-status: publish
-title: '[Каверы] Amatory - Нить длиною в жизнь'
-wordpress_id: '234'
-categories:
-- Моя музыка
-tags:
-- amatory
-- cover
-- гитара
-- каверы
+title: Каверы / Amatory - Нить длиною в жизнь
+comments: true
+language: ru
 ---
 
 [Amatory](http://spiridonov.pro/audio/Amatory_Lifeline.mp3)

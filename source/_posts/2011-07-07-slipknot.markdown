@@ -1,20 +1,9 @@
 ---
-author: Stanislav
-date: '2011-07-07 23:54:32'
+date: 2011-07-07 23:54
 layout: post
-slug: slipknot
-status: publish
 title: Отчёт о московском концерте Slipknot
-wordpress_id: '249'
-categories:
-- life
-tags:
-- slipknot
-- концерт
-- москва
-- музыка
-- путешествие
-- трэш
+comments: true
+language: ru
 ---
 
 [![](http://spiridonov.pro/wp-
