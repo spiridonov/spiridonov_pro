@@ -4,9 +4,10 @@ layout: post
 title: Каверы / Hatebreed - Undiminished
 comments: true
 language: ru
+audio: true
 ---
 
-[Undiminished](http://spiridonov.pro/audio/Hatebreed_Undiminished.mp3)
+<audio controls="control" preload="none" src="http://spiridonov.pro/audio/Hatebreed_Undiminished.mp3" type="audio/mp3">
 
 Записал в drop-B, на полтона ниже, потому что стояли слишком толстые для
 drop-C струны. Ритм играл на Edwards, соло - на KH-2. Даблтреков не делал - и

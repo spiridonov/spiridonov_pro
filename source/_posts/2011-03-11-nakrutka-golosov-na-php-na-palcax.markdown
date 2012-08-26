@@ -4,6 +4,7 @@ layout: post
 title: Накрутка голосов на PHP на пальцах
 comments: true
 language: ru
+published: false
 ---
 
 Мои знакомые постоянно участвуют в различных конкурсах. При этом они

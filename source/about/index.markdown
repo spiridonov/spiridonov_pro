@@ -4,7 +4,7 @@ title: About me
 language: en
 ---
 
-My name is Stanislav Spiridonov. I`m a
+{% img left /images/about.jpg %}
 
 ## Contact information
 
@@ -12,4 +12,4 @@ My name is Stanislav Spiridonov. I`m a
 **Twitter**: [@stas_spiridonov](http://twitter.com/stas_spiridonov)  
 **Skype**: [stas.spiridonov](skype:stas.spiridonov?call)  
 **GitHub**: [spiridonov](https://github.com/spiridonov)  
-**Flickr**: [stas_spiridonov](http://www.flickr.com/photos/81180507@N08/sets/)
+**Flickr**: [stas_spiridonov](http://www.flickr.com/photos/stas_spiridonov/sets/)

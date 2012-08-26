@@ -4,6 +4,7 @@ layout: post
 title: В гостях у Parallels
 comments: true
 language: ru
+published: false
 ---
 
 Обзоры офисов – это отдельный особый жанр. У меня совсем нет опыта в описании

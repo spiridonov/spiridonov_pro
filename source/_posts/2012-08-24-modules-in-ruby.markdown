@@ -4,6 +4,7 @@ title: "Modules and Classes in Ruby"
 date: 2012-08-25 15:56
 comments: true
 language: en
+published: false
 ---
 
 There are several Rails models. Of course each class is located in separate file.

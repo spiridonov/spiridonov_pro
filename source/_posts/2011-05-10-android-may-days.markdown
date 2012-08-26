@@ -4,6 +4,7 @@ layout: post
 title: Отчёт о Android May Days
 comments: true
 language: ru
+published: false
 ---
 
 Я продолжаю расширять своё сознание. Даже поверхностное знакомство со многими

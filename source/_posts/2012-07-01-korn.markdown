@@ -1,12 +1,13 @@
 ---
 date: 2012-07-01 16:00
 layout: post
-title: '[Каверы] KoЯn – Blind'
+title: Каверы / KoЯn – Blind
 language: ru
 comments: true
+audio: true
 ---
 
-[Korn](http://spiridonov.pro/audio/Korn_Blind.mp3)
+<audio controls="control" preload="none" src="/audio/Korn_Blind.mp3" type="audio/mp3">
 
 Давно я чё-то не записывал кавера...
 [Последний](http://spiridonov.pro/2011/06/26/amatory/) вот аж год назад был.

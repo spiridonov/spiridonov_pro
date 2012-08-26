@@ -4,6 +4,7 @@ layout: post
 title: Отчёт о MS DevCon`12
 comments: true
 language: ru
+published: false
 ---
 
 Как меня занесло на майкрософтовскую конференцию? Всё просто — я был самым

@@ -65,5 +65,6 @@ var disqus_config = function () {
 * [Original ExitWP by thomasf](https://github.com/thomasf/exitwp)
 * [Fork of ExitWP by chitsaou with some fixes](https://github.com/chitsaou/exitwp)
 * [Hosting an Octopress Blog on Amazon S3](http://www.ianwootten.co.uk/2011/09/09/hosting-an-octopress-blog-on-amazon-s3)
+* [Quick Tip for Easily Deploying Octopress Blog on Amazon S3](http://www.jerome-bernard.com/blog/2011/08/20/quick-tip-for-easily-deploying-octopress-blog-on-amazon-s3/)
 * [Markdown by John Gruber](http://daringfireball.net/projects/markdown/basics)
 

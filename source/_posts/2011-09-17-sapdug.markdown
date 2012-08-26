@@ -4,6 +4,7 @@ layout: post
 title: Отчёт о второй встрече SAPDUG
 comments: true
 language: ru
+published: false
 ---
 
 В Самаре есть замечательное сообщество SAPDUG - Samara Apple Developer User

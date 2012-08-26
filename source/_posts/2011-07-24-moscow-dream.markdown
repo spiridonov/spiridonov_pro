@@ -4,6 +4,7 @@ layout: post
 title: Рай на земле есть! Всего 140 тысяч за кв. метр
 comments: true
 language: ru
+published: false
 ---
 
 [![](http://spiridonov.pro/wp-

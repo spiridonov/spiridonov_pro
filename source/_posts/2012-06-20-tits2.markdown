@@ -1,19 +1,9 @@
 ---
-author: Stanislav
-date: '2012-06-20 20:08:42'
+date: 2012-06-20 20:08
 layout: post
-slug: tits2
-status: publish
 title: Source of Tits 2
 language: ru
-categories:
-- Технологии
-tags:
-- ruby
-- sourceoftits
-- twitter
-- вконтакт
-- программирование
+published: false
 ---
 
 Сегодня не будет серьёзных вещей, друзья. Сегодня будет программирование just

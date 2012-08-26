@@ -4,6 +4,7 @@ layout: post
 title: Отчёт о московском концерте Slipknot
 comments: true
 language: ru
+published: false
 ---
 
 [![](http://spiridonov.pro/wp-
