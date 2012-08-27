@@ -4,7 +4,6 @@ layout: post
 title: Отчёт о Android May Days
 comments: true
 language: ru
-published: false
 ---
 
 Я продолжаю расширять своё сознание. Даже поверхностное знакомство со многими
@@ -40,48 +39,51 @@ published: false
 вас есть возможность посмотреть на спины докладчиков)) Звук получился
 терпимым, хотя на запись попало много посторонних шумов с улицы.
 
-  
+## Саша Шауберт - Native разработка под Android
 
-## 1. Саша Шауберт - Native разработка под Android
+[Презентация на SlideShare.](http://www.slideshare.net/shaubert/native-development)
 
-[Презентация на SlideShare.](http://www.slideshare.net/shaubert/native-
-development)
+* Для чего нужно писать нативный код?
+* Установка и подготовка NDK
+* Структура MAKE файла
+* Связь с Java-кодом
+* Компиляция и ошибки
+* Разбор стектрейсов из нативного кода
 
-  * Для чего нужно писать нативный код?
-  * Установка и подготовка NDK
-  * Структура MAKE файла
-  * Связь с Java-кодом
-  * Компиляция и ошибки
-  * Разбор стектрейсов из нативного кода
+<iframe width="100%" height="375" frameborder="0" src="http://video.yandex.ru/iframe/stanislav-v-spiridonov/me0gelon2l.3005/"></iframe>
 
-## 2. Рома Григорьев - Fragments & Loaders
+## Рома Григорьев - Fragments & Loaders
 
-  * Постановка проблемы
-  * Решение №1 - самописный Aspect фреймворк
-  * Решение №2 - Fragments API
-  * Android 3.0 и Compatibility Package
-  * Loaders
+* Постановка проблемы
+* Решение №1 - самописный Aspect фреймворк
+* Решение №2 - Fragments API
+* Android 3.0 и Compatibility Package
+* Loaders
 
-## 3. Саша Шауберт - DI фреймворк RoboGuice
+<iframe width="100%" height="375" frameborder="0" src="http://video.yandex.ru/iframe/stanislav-v-spiridonov/hq0zcmkasw.2509/"></iframe>
+
+## Саша Шауберт - DI фреймворк RoboGuice
 
 [Презентация на SlideShare.](http://www.slideshare.net/shaubert/roboguice)
 
-  * Коротко о проблеме DI
-  * DI фреймворк и не только
-  * Инжекция View
-  * Инжекция Event
-  * Передача параметров в конструктор
-  * Логирование
+* Коротко о проблеме DI
+* DI фреймворк и не только
+* Инжекция View
+* Инжекция Event
+* Передача параметров в конструктор
+* Логирование
 
-## 4. Саша Шауберт - Майская подборка зубодробительных багов
+<iframe width="100%" height="375" frameborder="0" src="http://video.yandex.ru/iframe/stanislav-v-spiridonov/omcto1mus4.2409/"></iframe>
 
-[Презентация на SlideShare.](http://www.slideshare.net/shaubert/exploding-
-head-issues)
+## Саша Шауберт - Майская подборка зубодробительных багов
 
-  * Утечка объекта Thread
-  * Утечка всей Activity
-  * Незакрытые файловые потоки
-  * Pending Intent
-  * Неразумное перекрытие метода меню
-  * Самсунг и скролл «как в айос»
+[Презентация на SlideShare.](http://www.slideshare.net/shaubert/exploding-head-issues)
 
+* Утечка объекта Thread
+* Утечка всей Activity
+* Незакрытые файловые потоки
+* Pending Intent
+* Неразумное перекрытие метода меню
+* Самсунг и скролл «как в айос»
+
+<iframe width="100%" height="375" frameborder="0" src="http://video.yandex.ru/iframe/stanislav-v-spiridonov/2dnx3zt4u2.2503/"></iframe>

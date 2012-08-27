@@ -1,7 +1,7 @@
 ---
 date: 2011-10-08 21:41
 layout: post
-title: 'Портреты / Стив Джобс'
+title: Портреты / Стив Джобс
 comments: true
 language: ru
 ---

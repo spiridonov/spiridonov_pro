@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Portraits / Alexandra L.'
+title: Portraits / Alexandra L.
 language: en
 comments: true
 ---

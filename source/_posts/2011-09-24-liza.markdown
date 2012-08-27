@@ -1,8 +1,7 @@
 ---
-author: Stanislav
 date: 2011-09-24 20:14
 layout: post
-title: 'Портреты / Лиза'
+title: Портреты / Лиза
 comments: true
 language: ru
 ---

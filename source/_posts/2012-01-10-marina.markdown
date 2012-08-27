@@ -1,7 +1,7 @@
 ---
 comments: true
 layout: post
-title: 'Портреты / Марина И.'
+title: Портреты / Марина И.
 language: ru
 comments: true
 ---
