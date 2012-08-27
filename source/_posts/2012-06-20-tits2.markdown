@@ -164,8 +164,8 @@ end
 картинка-дубликат. Зелёная рамка — картинка уже была опубликована, красная —
 отклонена, белая означает, что дубликат тоже стоит в очереди на модерацию.
 
-{% img center /images/tits2/mobile1.png %}
-{% img center /images/tits2/mobile2.png %}
+{% img /images/tits2/mobile1.png %}
+{% img /images/tits2/mobile2.png %}
 
 ## Деплой
 
