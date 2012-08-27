@@ -3,6 +3,7 @@ date: 2012-06-20 20:08
 layout: post
 title: Source of Tits 2
 language: ru
+comments: true
 ---
 
 Сегодня не будет серьёзных вещей, друзья. Сегодня будет программирование just
