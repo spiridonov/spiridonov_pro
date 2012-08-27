@@ -4,18 +4,16 @@ layout: post
 title: Отчёт о московском концерте Slipknot
 comments: true
 language: ru
-published: false
 ---
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64524-500x333.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64524.jpg)
+{% img center /images/slipknot/64524-500x333.jpg %}
 
 Когда меня спрашивают, как прошёл концерт, я отвечаю: «Это лучшее, что было со
 мной в жизни!». И люди почему-то в ответ удивляются и хихикают :) Не знаю, о
 каких (пошлых?) вещах они думают, но концерт на самом деле был просто
 потрясающий!
 
+{% img center /images/slipknot/64482-500x332.jpg %}
   
 Для полноты ощущений я взял билет в панкзону (фанзону :) ). Брать на трибуну
 по-моему нет смысла. Если уж хочется сэкономить денег - можно скачать концерт
@@ -33,7 +31,8 @@ I'm 666!» и вся очередь его поддержала. Это было
 коротали минуты в очереди. Наконец настал сладкий миг и нас впустили в зал.
 Здесь опять начался спорт. Я тут ролик нашёл в тему:
 
-  
+<iframe width="100%" height="375" src="http://www.youtube.com/embed/sgJt_6CliIo?rel=0" frameborder="0" allowfullscreen></iframe>
+
 Ещё час мы стояли в ожидании начала. Я разглядывал сцену и оборудование,
 глазел по сторонам и смотрел, как в партер и на трибуны набивается народ.
 Воздух закончился минут через 10. Ещё ничего не началось, но уже стало ясно,
@@ -69,8 +68,11 @@ I'm 666!» и вся очередь его поддержала. Это было
 концертом, конечно, совсем не те. Там надо быть внутри. Это словами не
 передать...
 
+{% img center /images/slipknot/64486-500x333.jpg %}
+
 На Spit It Out случилось то, о чём я так долго мечтал. Невероятные ощущения!
 
+<iframe width="100%" height="375" src="http://www.youtube.com/embed/8d08jvKR49I?rel=0" frameborder="0" allowfullscreen></iframe>
   
 На 0:19 хорошо видно меня в чёрной майке :)
 
@@ -81,26 +83,31 @@ I'm 666!» и вся очередь его поддержала. Это было
 [есть](http://rutracker.org/forum/viewtopic.php?t=3638243) целиком концерт,
 даже записанный с достаточно приличным звуком. Рекомендую посмотреть.
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64482-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64482.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64485-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64485.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64486-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64486.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64503-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64503.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64519-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64519.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/64489-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/64489.jpg)
+{% img center /images/slipknot/64489-500x332.jpg %}
 
-Основной сет-лист выглядел так: 01. Iowa (intro) 02. 742617000027 (intro) 03.
-(sic) 04. Eyeless 05. Wait and Bleed 06. The Blister Exists 07. Liberate 08.
-Before I Forget 09. Pulse Of The Maggots 10. Purity 11. Left Behind 12.
-Disasterpiece 13. Psychosocial 14. The Heretic Anthem 15. Duality 16. Only One
-17. Spit It Out
+Основной сет-лист выглядел так:
 
-А под конец нас всех добили парой мощнейших песен: 18. (515) (intro) 19.
-People = Shit 20. Surfacing 21. 'Til We Die (outro)
+* Iowa (intro)
+* 742617000027 (intro)
+* (sic)
+* Eyeless
+* Wait and Bleed
+* The Blister Exists
+* Liberate
+* Before I Forget
+* Pulse Of The Maggots
+* Purity
+* Left Behind
+* Disasterpiece
+* Psychosocial
+* The Heretic Anthem
+* Duality 16. Only One
+* Spit It Out
+
+А под конец нас всех добили парой мощнейших песен:
+
+* (515) (intro)
+* People = Shit
+* Surfacing
+* 'Til We Die (outro)
 
