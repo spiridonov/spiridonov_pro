@@ -4,19 +4,15 @@ layout: post
 title: Рай на земле есть! Всего 140 тысяч за кв. метр
 comments: true
 language: ru
-published: false
 ---
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240800-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240800.jpg)
+{% img center /images/moscow-dream/P1240800-500x375.jpg %}
 
 Это не рекламный пост. Я бы, конечно, хотел, чтобы он был щедро проплачен. Но
 это не так. Пишу я это исключительно под собственным впечатлением от
 увиденного. И @dtagaev, с которым мы нашли это место, тоже удивлён не меньше
 меня.
 
-  
 Был прекрасный солнечный день. Путь наш лежал от ВДНХ на запад. Пройдя через
 ВДНХ и Останкино мы двигались к серой ветке в поисках любой станции метро.
 Там, гуляя дворами и неведомыми тропинками, мы вышли к шлагбауму. Два
@@ -40,28 +36,8 @@ content/uploads/2011/07/P1240800.jpg)
 «космической» лавочке. Рядом была «8bit» с крупными пикселями и рисунками из
 Марио. Трансформаторные будки изрисованы граффити и выглядят достаточно
 гармонично. Хотя вокруг и так было чисто, вышел мужик и стал ещё намывать
-детскую площадку из шланга. Это добило нас окончательно :) Чище и красивее
+детскую площадку из шланга. Это добило нас окончательно:) Чище и красивее
 места мы пока не видели (вживую, а не на картинках, конечно).
-
-Вот вам немного фото:
-
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240806-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240806.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240805-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240805.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240804-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240804.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240803-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240803.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240802-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240802.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240801-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240801.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240800-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240800.jpg)[![](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240799-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/07/P1240799.jpg)
 
 Недавно я лазил по интернету и выяснил, что это был ЖК Марфино. И цена за
 квадратный метр там всего 140-180 тысяч. То есть это вполне обычные цены по
@@ -69,4 +45,6 @@ content/uploads/2011/07/P1240799.jpg)
 припаркованным машинам и детям, играющим во дворе.
 
 ЗЫ А ещё там интернет 50 мегабит за 550 рублей в месяц :)
+
+[Все фотки на Фликре](http://www.flickr.com/photos/stas_spiridonov/sets/72157631275908628/)
 
