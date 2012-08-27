@@ -86,7 +86,7 @@ Skunk Anansie.
 скажу:) Однако всё вполне реально. Но я не мог не снять финальный замес на
 Take a look around! Рожа в зелёной кепке — это я, если чё:)
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/4ukIta0wEio?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="375" src="http://www.youtube.com/embed/4ukIta0wEio?rel=0" frameborder="0" allowfullscreen></iframe>
   
 Вобщем, было супер! Ждём следующий год. Даёшь больше крутых американских
 команд!:)
