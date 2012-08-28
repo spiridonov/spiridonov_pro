@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruby gotchas. Part 1
-date: 2012-08-25 15:56
+date: 2012-08-28 15:56
 comments: true
 language: en
 ---
