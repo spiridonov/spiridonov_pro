@@ -111,7 +111,7 @@ Lets check it in Rails console:
 
 There is a difference between `Foo::Bar` and `module Foo ... class Bar`, remember that! When we declare Bar inside Foo module, Bar gets lexical scope of Foo.
 
-##Related links
+## Related links
 
 * [Pat Shaughnessy - Objects, Classes and Modules](http://patshaughnessy.net/2012/7/26/objects-classes-and-modules)
 * [Overriding instance method with module](http://shime.github.com/blog/2012/08/06/overriding-instance-method-with-module-method/)

@@ -14,7 +14,7 @@ Pros of this migrations for me are:
 * **Cheaper or free hosting.** It\`s easy to find free hosting for static HTML pages. I deploy on Amazon S3. Actually it\`s not free, but my total cost is only a few cents.
 * **It\`s funny!** I can write Ruby, Markdown, SASS... I can fix or tweak everything. I can use Git for blog posts. Hacker\`s way:)
 
-##Configuring and customizing
+## Configuring and customizing
 
 Customizing of theme took almost all my time. I took several open source themes for Octopress, mixed them and customized layout, header and syntax highlighting. Configuring and customizing the rest code was easy enough and took less time.
 
@@ -39,7 +39,7 @@ After I got tons of converted markdown files I had to fix them all. Almost all d
 
 There are also a lot of small fixes I made in my code. I don\`t want to describe all of them here. You can find full sources on my GitHub page, if you want.
 
-##Dual Language
+## Dual Language
 
 In order to practice language I decided to write articles in English. But what should I do with two-years archive in Russian? At first I decided to delete it and start new blog and new life:) But finally I decided to delete worse half of it and keep the rest in a separate folder.
 
@@ -57,7 +57,7 @@ var disqus_config = function () {
 }; 
 {% endraw %}{% endcodeblock %}
 
-##Related links
+## Related links
 
 * [Octopress official site](http://octopress.org/)
 * [Octopress engine on GitHub](https://github.com/imathis/octopress)
