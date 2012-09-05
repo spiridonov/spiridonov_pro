@@ -4,7 +4,6 @@ layout: post
 title: Накрутка голосов на PHP на пальцах
 comments: true
 language: ru
-published: false
 ---
 
 Мои знакомые постоянно участвуют в различных конкурсах. При этом они
@@ -18,7 +17,6 @@ _**Внимание!** Данный пост написан исключител
 разработке собственных приложений. Играйте честно, друзья, и не нарушайте
 закон!_
 
-  
 Для голосования не требовалось регистрации. Единственное ограничение было в
 том, что с одного IP можно голосовать не чаще, чем раз в 3 часа. Это
 значительно облегчало задачу. Первым делом я полез в куки браузера, чтобы
@@ -43,9 +41,7 @@ _**Внимание!** Данный пост написан исключител
 что я опишу тут общие принципы, которые применимы для любого подобного
 механизма голосования.
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/03/voter1-300x223.png)](http://spiridonov.pro/wp-
-content/uploads/2011/03/voter1.png)
+{% img center /images/voter/voter1.png %}
 
 Всё содержимое формы будет отправлено на сервер по нажатию на кнопку
 `type=submit`. Способ отправки данных формы на сервер указан в атрибуте
@@ -58,8 +54,7 @@ content/uploads/2011/03/voter1.png)
 отличаться (возможно, я расскажу об этом следующий раз).
 
 Назначение почти всех `<input>` понятно. В глаза бросается только последний
-неведомый ***ный  параметр:
-
+неведомый параметр:
     
     <input type="hidden" name="dd972dd7998aca5da8349c281a530424" value="1" />
 
@@ -67,7 +62,6 @@ content/uploads/2011/03/voter1.png)
 
 Поскольку используется метод `POST`, я предполагаю, что запрос будет выглядеть
 примерно так:
-
     
     POST /path/to/voting/script HTTP/1.1
     Host: www.target.ru
@@ -80,8 +74,7 @@ content/uploads/2011/03/voter1.png)
 ## Смотрим за пакетами
 
 Чтобы получить точные данные, которые посылает браузер, я воспользовался
-Wireshark`ом (линуксоиды будут пользоваться tcpdump`ом + каким нибудь удобным
-просмотрщиком save-файла). О снифферах и особенно о wifi-снифферах я расскажу
+Wireshark\`ом. О снифферах и особенно о wifi-снифферах я расскажу
 подробнее в следующий раз.
 
 Запускаем Wireshark, настраиваем фильтр так, чтобы отлавливались только пакеты
@@ -91,24 +84,19 @@ Wireshark`ом (линуксоиды будут пользоваться tcpdump
 куки для этого сайта, открываем страницу с формой голосования, выбираем нужный
 пункт, нажимаем «Голосовать». Останавливаем захват пакетов. Ищем пакет `POST`:
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/03/voter2-300x196.png)](http://spiridonov.pro/wp-
-content/uploads/2011/03/voter2.png)
+{% img center /images/voter/voter2.png %}
 
 Тут всё, как я и предполагал, за исключением строки:
 
-    
     Cookie: 0c8b34dacf4f14182867180a1aaba5c4=47e0e642a25f8b86d926b6f2cf9eef55
 
-Теперь понятно зачем нужен тот неведомый ***ный параметр со страшным именем.
+Теперь понятно зачем нужен тот неведомый параметр со страшным именем.
 Это простейшая защита от накрутки, которая лишь наполовину усложнит наш скрипт
 - нельзя тупо отправить POST-запрос на сервер, не загрузив перед этим страницу
 с голосованием. Откуда нам получить эту куку? Ищем пакет `GET` с запросом
 самой страницы. Следом за ним ищем ближайший `HTTP/1.1 200 OK`:
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/03/voter3-300x58.png)](http://spiridonov.pro/wp-
-content/uploads/2011/03/voter3.png)
+{% img center /images/voter/voter3.png %}
 
 Из него нам нужна только строка `Set-Cookie`. Это указание браузеру сохранить
 куку `key=value` для текущего сайта, а точнее для его части, указанной в
@@ -119,14 +107,14 @@ content/uploads/2011/03/voter3.png)
 ## Реализация
 
 Общая картина у нас теперь сложилась. Нам нужно запросить `GET` страницу с
-формой голосования, вытащить из заголовка куку и тот неведомый ***ный параметр
-из формы. Затем сформировать `POST` запрос с кукой, неведомым ***ным
+формой голосования, вытащить из заголовка куку и тот неведомый параметр
+из формы. Затем сформировать `POST` запрос с кукой, неведомым
 параметром и другими параметрами, которые остаются неизменными. Всё это нужно
 выполнять в цикле по файлу со списком прокси-серверов.
 
 Выполнение скрипта будет занимать много времени - соответственно, его нельзя
 будет расположить у какого нибудь веб-хостера. Никаким шеллом я, к сожадению,
-не владею. Поэтому запускать буду на локальной машине :) Это крайне
+не владею. Поэтому запускать буду на локальной машине:) Это крайне
 небезопасно, и я никому не рекомендую так делать!
 
 Где достать список прокси? Для меня это тоже было проблемой. В сети много
@@ -142,106 +130,107 @@ content/uploads/2011/03/voter3.png)
 
 После вечера кодирования и отладки у меня получилось так:
 
-    
-    <?php  
-    function PostRequest($url, $proxy_host, $proxy_port, $data, $cookie)
-    {
-        $url = parse_url($url);  
-        $host = $url['host'];
-        $path = $url['path'];  
-        $fp = fsockopen($proxy_host, $proxy_port);
-    	if (!$fp)
-    		return;  
-        fputs($fp, "POST $path HTTP/1.1\r\n");
-        fputs($fp, "Host: $host\r\n");
-        fputs($fp, "Connection: close\r\n");
-        fputs($fp, "Referer: $url\r\n");
-    	fputs($fp, "Accept: text/javascript, text/html, application/xml, text/xml, */*\r\n");
-    	fputs($fp, "Content-Length: ".strlen($data)."\r\n");
-    	fputs($fp, "Origin: $host\r\n");
-    	fputs($fp, "X-Requested-With: XMLHttpRequest\r\n");
-    	fputs($fp, "Content-type: application/x-www-form-urlencoded; charset=UTF-8\r\n");
-    	fputs($fp, "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.98 Safari/534.13\r\n");
-    	fputs($fp, "Cookie: $cookie\r\n\r\n");
-        fputs($fp, $data);  
-        $result = '';
-        while(!feof($fp)) {
-            $result .= fgets($fp, 128);
-        }
-        fclose($fp);  
-        $result = explode("\r\n\r\n", $result, 2);
-        $header = isset($result[0]) ? $result[0] : '';
-        $content = isset($result[1]) ? $result[1] : '';  
-        return array($header, $content);
+{% codeblock lang:php %}
+<?php  
+function PostRequest($url, $proxy_host, $proxy_port, $data, $cookie)
+{
+    $url = parse_url($url);  
+    $host = $url['host'];
+    $path = $url['path'];  
+    $fp = fsockopen($proxy_host, $proxy_port);
+	if (!$fp)
+		return;  
+    fputs($fp, "POST $path HTTP/1.1\r\n");
+    fputs($fp, "Host: $host\r\n");
+    fputs($fp, "Connection: close\r\n");
+    fputs($fp, "Referer: $url\r\n");
+	fputs($fp, "Accept: text/javascript, text/html, application/xml, text/xml, */*\r\n");
+	fputs($fp, "Content-Length: ".strlen($data)."\r\n");
+	fputs($fp, "Origin: $host\r\n");
+	fputs($fp, "X-Requested-With: XMLHttpRequest\r\n");
+	fputs($fp, "Content-type: application/x-www-form-urlencoded; charset=UTF-8\r\n");
+	fputs($fp, "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.98 Safari/534.13\r\n");
+	fputs($fp, "Cookie: $cookie\r\n\r\n");
+    fputs($fp, $data);  
+    $result = '';
+    while(!feof($fp)) {
+        $result .= fgets($fp, 128);
+    }
+    fclose($fp);  
+    $result = explode("\r\n\r\n", $result, 2);
+    $header = isset($result[0]) ? $result[0] : '';
+    $content = isset($result[1]) ? $result[1] : '';  
+    return array($header, $content);
+}  
+function GetRequest($url, $proxy_host, $proxy_port)
+{
+    $url = parse_url($url);  
+    $host = $url['host'];
+    $path = $url['path'];  
+    $fp = fsockopen($proxy_host, $proxy_port);
+	if (!$fp)
+		return;  
+    fputs($fp, "GET $path HTTP/1.1\r\n");
+    fputs($fp, "Host: $host\r\n");
+    fputs($fp, "Connection: close\r\n");
+	fputs($fp, "Accept: text/javascript, text/html, application/xml, text/xml, */*\r\n");
+	fputs($fp, "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.98 Safari/534.13\r\n\r\n");  
+    $result = '';
+    while(!feof($fp)) {
+        $result .= fgets($fp, 128);
+    }
+    fclose($fp);  
+    $result = explode("\r\n\r\n", $result, 2);
+    $header = isset($result[0]) ? $result[0] : '';
+    $content = isset($result[1]) ? $result[1] : '';  
+    return array($header, $content);
+}  
+$handle = @fopen("C:/proxylist.txt", "r");
+if ($handle)
+{
+    while (($buffer = fgets($handle)) !== false)
+	{
+		$result = explode("\t", $buffer, 3);
+		$proxy_host = isset($result[0]) ? $result[0] : '';
+		$proxy_port = isset($result[1]) ? $result[1] : '';
+		$proxy_port = str_replace("\n", "", $proxy_port);  
+		echo "$proxy_host : $proxy_port - ";  
+		if ($proxy_host != '' && $proxy_port != '')
+		{
+			list($header, $content) = GetRequest(
+				"http://www.target.ru/road/to/hell",
+				$proxy_host, $proxy_port
+			);  
+			if (preg_match('/Set-Cookie: (.+);/', $header, $matches))
+			{
+				$cookie = $matches[1];  
+				if (preg_match('/<div><input type="hidden" name="(.+)" value="1" \/><\/div><\/form>/', $content, $matches))
+				{
+					$fuck = $matches[1];
+					echo $fuck;
+					$data = "voteid=83&option=com_apoll&id=20&format=raw&view=apoll&$fuck=1";  
+					list($header, $content) = PostRequest(
+						"http://www.target.ru/road/to/fucking/hell/fuck/yeah",
+						$proxy_host, $proxy_port,
+						$data, $cookie
+					);
+					echo " - OK\n";
+				}
+				else
+				{
+					echo "Fuck fail\n";
+				}
+			}
+			else
+			{
+				echo "Cookie fail\n";
+			}
+		}
     }  
-    function GetRequest($url, $proxy_host, $proxy_port)
-    {
-        $url = parse_url($url);  
-        $host = $url['host'];
-        $path = $url['path'];  
-        $fp = fsockopen($proxy_host, $proxy_port);
-    	if (!$fp)
-    		return;  
-        fputs($fp, "GET $path HTTP/1.1\r\n");
-        fputs($fp, "Host: $host\r\n");
-        fputs($fp, "Connection: close\r\n");
-    	fputs($fp, "Accept: text/javascript, text/html, application/xml, text/xml, */*\r\n");
-    	fputs($fp, "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.98 Safari/534.13\r\n\r\n");  
-        $result = '';
-        while(!feof($fp)) {
-            $result .= fgets($fp, 128);
-        }
-        fclose($fp);  
-        $result = explode("\r\n\r\n", $result, 2);
-        $header = isset($result[0]) ? $result[0] : '';
-        $content = isset($result[1]) ? $result[1] : '';  
-        return array($header, $content);
-    }  
-    $handle = @fopen("C:/proxylist.txt", "r");
-    if ($handle)
-    {
-        while (($buffer = fgets($handle)) !== false)
-    	{
-    		$result = explode("\t", $buffer, 3);
-    		$proxy_host = isset($result[0]) ? $result[0] : '';
-    		$proxy_port = isset($result[1]) ? $result[1] : '';
-    		$proxy_port = str_replace("\n", "", $proxy_port);  
-    		echo "$proxy_host : $proxy_port - ";  
-    		if ($proxy_host != '' && $proxy_port != '')
-    		{
-    			list($header, $content) = GetRequest(
-    				"http://www.target.ru/road/to/hell",
-    				$proxy_host, $proxy_port
-    			);  
-    			if (preg_match('/Set-Cookie: (.+);/', $header, $matches))
-    			{
-    				$cookie = $matches[1];  
-    				if (preg_match('/<div><input type="hidden" name="(.+)" value="1" \/><\/div><\/form>/', $content, $matches))
-    				{
-    					$fuck = $matches[1];
-    					echo $fuck;
-    					$data = "voteid=83&option=com_apoll&id=20&format=raw&view=apoll&$fuck=1";  
-    					list($header, $content) = PostRequest(
-    						"http://www.target.ru/road/to/fucking/hell/fuck/yeah",
-    						$proxy_host, $proxy_port,
-    						$data, $cookie
-    					);
-    					echo " - OK\n";
-    				}
-    				else
-    				{
-    					echo "Fuck fail\n";
-    				}
-    			}
-    			else
-    			{
-    				echo "Cookie fail\n";
-    			}
-    		}
-        }  
-        fclose($handle);
-    }  
-    ?>
+    fclose($handle);
+}  
+?>
+{% endcodeblock %}
 
 Не самый красивый код, но главное работает :)
 

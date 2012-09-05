@@ -4,7 +4,6 @@ layout: post
 title: Кейс для педалей
 comments: true
 language: ru
-published: false
 ---
 
 Педалей в последнее время у меня становится всё больше. Недавно я купил блок
@@ -12,11 +11,8 @@ published: false
 дошли до создания педалборда. И вся эта связка педалей теперь имеет
 законченный вид.
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240968-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240968.jpg)
+{% img center /images/pedalboard/P1240968-500x375.jpg %}
 
-  
 Педалборд я сделал на основе алюминиевого кейса для инструментов. Размер его
 44x32x12. Самое главное - это совсем небольшой вес кейса. Петли были
 модифицированы, для того чтобы верхняя крышка легко снималась. Нижняя
@@ -29,26 +25,17 @@ content/uploads/2011/08/P1240968.jpg)
 материалы куплены в строительных магазинах. Не скажу, что их было легко
 достать. За некоторыми пришлось объездить весь город.
 
-_(Все картинки кликабельны)_
+{% img center /images/pedalboard/P1240970-500x375.jpg %}
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240970-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240970.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240963-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240963.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240962-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240962.jpg) [![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240956-250x250.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240956.jpg)
+{% img center /images/pedalboard/P1240963-500x375.jpg %}
 
 На данный момент у меня ещё есть пара идей, как можно улучшить конструкцию.
 Буду реализовывать их по мере нахождения необходимых материалов. И конечно же
-буду держать тебя в курсе дел :)
+буду держать вас в курсе дел :)
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240946-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240946.jpg)
+{% img center /images/pedalboard/P1240946-500x375.jpg %}
 
-Если ты хочешь себе такой же - пиши мне на почту
-[stanislav@spiridonov.pro](mailto:stanislav@spiridonov.pro).
+**UPD:** Кейс в итоге продал:)
+
+[Все фотки на Фликре](http://www.flickr.com/photos/stas_spiridonov/sets/72157631416460088/)
 

@@ -4,18 +4,14 @@ layout: post
 title: Апдейт ящика
 comments: true
 language: ru
-published: false
 ---
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240973-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240973.jpg)
+{% img center /images/pedalboard/P1240973-500x375.jpg %}
 
 Внёс полезное изменение в конструкцию. Ничего не замечаешь, по сравнению с
-[первоначальным вариантом](http://spiridonov.pro/2011/08/11/pedalboard/)?
+[первоначальным вариантом](/2011/08/11/pedalboard/)?
 Куда-то пропал блок питания, да :)
 
-  
 Первоначально я поднял пол на 3 см и установил блок питания наверх, рядом с
 остальными педалями. Он, конечно, крутой и красивый, его хочется показывать
 всем и хвастаться им :) Но по большому счёту он сверху не нужен, на нём нет
@@ -32,9 +28,7 @@ content/uploads/2011/08/P1240973.jpg)
 размещения и подключения провода. Поработав пару вечеров ножом, сверлом и
 алмазным надфилем, у меня получилось вот это:
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240974-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240974.jpg)
+{% img center /images/pedalboard/P1240974-500x375.jpg %}
 
 Надёжнее не придумаешь! И проблема с проводом решена, и проблема с возможными
 перемещениями блока внутри крышки тоже.
@@ -45,7 +39,9 @@ content/uploads/2011/08/P1240974.jpg)
 свободное место для ещё одной педали, и лишние провода питания не мешают
 сверху. Profit! :)
 
-[![](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240977-500x375.jpg)](http://spiridonov.pro/wp-
-content/uploads/2011/08/P1240977.jpg)
+{% img center /images/pedalboard/P1240977-500x375.jpg %}
+
+**UPD:** Этот ящик я тоже в итоге продал:)
+
+[Все фотки на Фликре](http://www.flickr.com/photos/stas_spiridonov/sets/72157631416460088/)
 
