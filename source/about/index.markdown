@@ -4,7 +4,13 @@ title: About me
 language: en
 ---
 
-{% img left /images/about.jpg %}
+{% img profile-image /images/about.jpg %}
+
+My name is Stanislav Spiridonov, I\`m a software engineer and enthusiast. I\`m currently working at [Cloud Castle](http://cloudcastlegroup.com/) as a Rails developer. I was born in Siberia and now I live in Samara, Russia.
+
+What else would you like to know? I\`m into metal music. I play guitar and record covers by myself. I draw pencil portraits and really love it. I\`m single. I\`m a long distance runner and former weightlifter. I\`m learning Italian. I like travelling.
+
+I\`m open for hire. It\`s interesting for me to try different kinds of projects, simple ones as well as large applications. If you have an idea for a project, I'd love to discuss it with you.
 
 ## Contact information
 
