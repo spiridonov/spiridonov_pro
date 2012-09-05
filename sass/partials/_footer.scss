@@ -1,6 +1,11 @@
 body > footer {
   @extend .sans;
-  font-size: .625em;
+  @media only screen and (min-width: 250px) {
+    font-size: .5em;
+  }
+  @media only screen and (min-width: 650px) {
+    font-size: .7em;
+  }
   color: $footer-link-color;
   position: relative;
   padding-top: .5em;
