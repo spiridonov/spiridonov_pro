@@ -4,6 +4,7 @@ title: Rubinius 2.0, rbenv and RubyMine
 date: 2012-08-29 15:57
 comments: true
 language: en
+published: false
 ---
 
 ...It was sunny Friday\`s morning. My friend and I drank coffee and decided to try on Rubinius 2.0.0-dev. We hoped it would be enough easy to install it. But we didn\`t expect it to have some problems with rbenv and RubyMine as well:)

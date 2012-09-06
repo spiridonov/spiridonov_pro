@@ -6,7 +6,7 @@ language: en
 
 {% img profile-image /images/about.jpg %}
 
-My name is Stanislav Spiridonov, I\`m a software engineer and enthusiast. I\`m currently working at [Cloud Castle](http://cloudcastlegroup.com/) as a Rails developer. I was born in Siberia and now I live in Samara, Russia.
+My name is Stanislav Spiridonov, I\`m a software engineer and enthusiast. I\`m currently working at [Cloud Castle](http://cloudcastlegroup.com/) as a Ruby developer. I was born in Siberia and now I live in Samara, Russia.
 
 What else would you like to know? I\`m into metal music. I play guitar and record covers by myself. I draw pencil portraits and really love it. I\`m single. I\`m a long distance runner and former weightlifter. I\`m learning Italian. I like travelling.
 
