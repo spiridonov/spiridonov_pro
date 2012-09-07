@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Мои рисунки
+justify: false
 language: ru
 comments: true
 ---
