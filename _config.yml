@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+subscribe_rss: http://feeds.feedburner.com/spiridonov_pro
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
@@ -94,7 +94,7 @@ disqus_show_comment_count: false
 # disqus_developer: 1
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-34926149-1
 
 # Facebook Like
 facebook_like: false
