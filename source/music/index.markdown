@@ -5,21 +5,25 @@ language: en
 audio: true
 ---
 
-Sometimes I play guitar and record songs of my favorite bands. When I recorded my first cover I knew absolutely nothing about sound producing. I learnt new stuff after each song. There are all my records in chronological order on this page. So you can see my progress and how I study to play guitar and record it. I really love it! 
+Sometimes I play guitar and record songs of my favorite bands. When I recorded my first cover I used to know absolutely nothing about sound producing. I learnt new stuff after each song. There are all my records in chronological order on this page. So you can see my progress and how I study to play guitar and record it. I really love it! 
 
 ## Gear
 
 * Edwards E-LP-92CD (Gibson 500T + Gibson 496R) 
 * ESP KH-2 (EMG 81 + EMG 60A)
-* Engl e530
+* ENGL e530
 * E-MU 0404 USB
 * Korg Pitchblack
 * BOSS BF-2
 * Maxon OD-2
 * BOSS CS-3
+* BOSS NS-2
+* DigiTech Whammy V
 * Voodoo Lab ISO-5
-* D\`Addario
+* D'Addario
 * Dunlop Tortex 1mm
+* Monster Rock Cables
+* Ebow
 
 * * *
 

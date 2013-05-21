@@ -6,6 +6,7 @@ language: ru
 comments: true
 ---
 
+[{% img border /images/drawings/ru_250.jpg Рита У. 2013 %}](/images/drawings/ru.jpg)
 [{% img border /images/drawings/al2_250.jpg Александра Л. 2012 %}](/images/drawings/al2.jpg)
 [{% img border /images/drawings/al_250.jpg Александра Л. 2012 %}](/images/drawings/al.jpg)
 [{% img border /images/drawings/pa_250.jpg Полина А. 2012 %}](/images/drawings/pa.jpg)

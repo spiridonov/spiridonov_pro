@@ -18,4 +18,5 @@ I\`m open for hire. It\`s interesting for me to try different kinds of projects,
 **Twitter**: [@stas_spiridonov](http://twitter.com/stas_spiridonov)  
 **Skype**: [stas.spiridonov](skype:stas.spiridonov?call)  
 **GitHub**: [spiridonov](https://github.com/spiridonov)  
-**Flickr**: [stas_spiridonov](http://www.flickr.com/photos/stas_spiridonov/sets/)
+**Flickr**: [stas_spiridonov](http://www.flickr.com/photos/stas_spiridonov/sets/)  
+**Instagram**: [stas_spiridonov](http://instagram.com/stas_spiridonov)  
