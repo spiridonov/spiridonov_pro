@@ -6,6 +6,7 @@ justify: false
 language: en
 ---
 
+[{% img border /images/drawings/jh_250.jpg Jill and Aubrey. 2013 %}](/images/drawings/jh.jpg)
 [{% img border /images/drawings/ru_250.jpg Rita U. 2013 %}](/images/drawings/ru.jpg)
 [{% img border /images/drawings/al2_250.jpg Alexandra L. 2012 %}](/images/drawings/al2.jpg)
 [{% img border /images/drawings/al_250.jpg Alexandra L. 2012 %}](/images/drawings/al.jpg)
