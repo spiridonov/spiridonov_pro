@@ -3,6 +3,7 @@ layout: page
 title: My music
 language: en
 audio: true
+comments: true
 ---
 
 Sometimes I play guitar and record songs of my favorite bands. When I recorded my first cover I used to know absolutely nothing about sound producing. I learnt new stuff after each song. There are all my records in chronological order on this page. So you can see my progress and how I study to play guitar and record it. I really love it! 
