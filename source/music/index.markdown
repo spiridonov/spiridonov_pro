@@ -10,10 +10,11 @@ Sometimes I play guitar and record songs of my favorite bands. When I recorded m
 
 ## Gear
 
+I change gear not very often. My current setup is:
+
 * Edwards E-LP-92CD (Gibson 500T + Gibson 496R) 
 * ESP KH-2 (EMG 81 + EMG 60A)
 * ENGL e530
-* E-MU 0404 USB
 * Korg Pitchblack
 * BOSS BF-2
 * Maxon OD-2
@@ -21,10 +22,20 @@ Sometimes I play guitar and record songs of my favorite bands. When I recorded m
 * BOSS NS-2
 * DigiTech Whammy V
 * Voodoo Lab ISO-5
-* D'Addario
+* Ernie Ball Strings
 * Dunlop Tortex 1mm
 * Monster Rock Cables
 * Ebow
+* PreSonus AudioBox 22VSL
+* Sennheiser HD 650
+* Yamaha HS5
+
+I also used to have some other stuff:
+
+* MXR Phase 90
+* D'Addario Strings
+* Seymour Duncan Pickups
+* E-MU 0404 USB
 
 * * *
 

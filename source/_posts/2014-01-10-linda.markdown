@@ -1,0 +1,10 @@
+---
+layout: post
+title: Portraits / Linda L.
+language: en
+comments: true
+---
+
+[{% img center /images/drawings/ll_500.jpg %}](/images/drawings/ll.jpg)
+
+Awesome Finnish girl [Linda Liukas](http://lindaliukas.fi). Kindest and brightest girl I've ever seen. Check out her [Little Ruby](http://konichiwaruby.tumblr.com) book.

@@ -6,6 +6,7 @@ language: ru
 comments: true
 ---
 
+[{% img border /images/drawings/ll_250.jpg Линда Л. 2014 %}](/images/drawings/ll.jpg)
 [{% img border /images/drawings/jh_250.jpg Джилл и Обри. 2013 %}](/images/drawings/jh.jpg)
 [{% img border /images/drawings/ru_250.jpg Рита У. 2013 %}](/images/drawings/ru.jpg)
 [{% img border /images/drawings/al2_250.jpg Александра Л. 2012 %}](/images/drawings/al2.jpg)

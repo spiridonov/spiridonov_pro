@@ -10,10 +10,11 @@ comments: true
 
 ## Оборудование
 
+Я относительно редко меняю оборудование, чаще докупаю что-то новое. Сегодня я использую:
+
 * Edwards E-LP-92CD (Gibson 500T + Gibson 496R) 
 * ESP KH-2 (EMG 81 + EMG 60A)
 * ENGL e530
-* E-MU 0404 USB
 * Korg Pitchblack
 * BOSS BF-2
 * Maxon OD-2
@@ -21,10 +22,20 @@ comments: true
 * BOSS NS-2
 * DigiTech Whammy V
 * Voodoo Lab ISO-5
-* D'Addario
+* Ernie Ball Strings
 * Dunlop Tortex 1mm
 * Monster Rock Cables
 * Ebow
+* PreSonus AudioBox 22VSL
+* Sennheiser HD 650
+* Yamaha HS5
+
+В прошлом у меня были еще вот эти ребята:
+
+* MXR Phase 90
+* D'Addario Strings
+* Seymour Duncan Pickups
+* E-MU 0404 USB
 
 * * *
 
