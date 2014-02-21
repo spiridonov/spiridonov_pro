@@ -7,6 +7,16 @@ comments: true
 
 I read mostly articles and blog posts from different sources every day. Zite and Pocket are my best friends. But sometimes I read books, you know, these huge epub/pdf files with hundreds of pages. And here I want to share some of them with you.
 
+## Actors in Scala
+
+{% img right /images/books/actors_in_scala.jpg %}
+
+This book is a good introduction into Scala actors, especially if you are new to the idea of actors. The book starts with covering basics of concurrency. Main part describes Scala Actors API. And finally there are couple of chapters covering Akka API. It's relatively small and easy to read, there are plenty of examples.
+
+[Full artice](/2014/02/21/actors-in-scala)
+
+---
+
 ## The Goal
 
 {% img right /images/books/the_goal.jpg %}
