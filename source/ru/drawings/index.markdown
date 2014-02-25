@@ -4,6 +4,7 @@ title: Мои рисунки
 justify: false
 language: ru
 comments: true
+description: Мои карандашные рисунки и портреты. Красивые девушки, друзья, знаменитости.
 ---
 
 [{% img border /images/drawings/ll_250.jpg Линда Л. 2014 %}](/images/drawings/ll.jpg)

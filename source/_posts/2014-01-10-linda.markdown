@@ -3,6 +3,7 @@ layout: post
 title: Portraits / Linda L.
 language: en
 comments: true
+description: Pencil portrait of Linda Liukas, Finland.
 ---
 
 [{% img center /images/drawings/ll_500.jpg %}](/images/drawings/ll.jpg)

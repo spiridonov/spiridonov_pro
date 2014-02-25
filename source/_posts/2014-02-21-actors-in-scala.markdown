@@ -4,6 +4,7 @@ title: Reading / Actors in Scala
 date: 2014-02-21
 comments: true
 language: en
+description: My review on Actors in Scala book. There is a question to Erlang and Scala developers about design patterns of actor systems.
 ---
 
 {% img center /images/actors-in-scala/cover.jpg %}

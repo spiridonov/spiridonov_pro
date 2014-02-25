@@ -2,6 +2,7 @@
 layout: page
 title: About me
 language: en
+description: About me and my contacts. Stas Spiridonov
 ---
 
 {% img profile-image /images/about.jpg %}

@@ -2,6 +2,7 @@
 layout: page
 title: Обо мне
 language: ru
+description: Обо мне, мои контакты. Стас Спиридонов
 ---
 
 {% img profile-image /images/about.jpg %}
