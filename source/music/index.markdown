@@ -39,6 +39,12 @@ I also used to have some other stuff:
 
 * * *
 
+## 2014
+
+### Gojira - L'Enfant sauvage
+
+<audio controls="control" preload="none" src="/audio/Gojira_Lenfant_sauvage.mp3" type="audio/mp3">
+
 ## 2012
 
 ### Korn - Blind
