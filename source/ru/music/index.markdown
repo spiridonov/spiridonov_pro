@@ -41,6 +41,14 @@ comments: true
 
 ## 2014
 
+### Lamb of God – Desolation
+
+<audio controls="control" preload="none" src="/audio/Lamb_of_God_Desolation.mp3" type="audio/mp3">
+
+### Rage Against The Machine – Killing in the Name
+
+<audio controls="control" preload="none" src="/audio/RATM_Killing_in_the_Name.mp3" type="audio/mp3">
+
 ### Gojira - L'Enfant sauvage
 
 <audio controls="control" preload="none" src="/audio/Gojira_Lenfant_sauvage.mp3" type="audio/mp3">
