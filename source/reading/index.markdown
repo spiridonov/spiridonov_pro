@@ -7,6 +7,16 @@ comments: true
 
 I read mostly articles and blog posts from different sources every day. Zite and Pocket are my best friends. But sometimes I read books, you know, these huge epub/pdf files with hundreds of pages. And here I want to share some of them with you.
 
+## Carb Back Loading 1.0
+
+{% img right /images/books/carb_back_loading.jpg %}
+
+This book is about dieting. If you do strength training and want to gain muscles (and lose fat) – this one is for you. Carbs are not your enemies. If you know how to use them properly you will get desirable results and be able to eat pizza and cookies at the same time.
+
+[Full artice](/2014/04/09/carb-back-loading)
+
+---
+
 ## Actors in Scala
 
 {% img right /images/books/actors_in_scala.jpg %}
