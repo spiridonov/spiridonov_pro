@@ -9,9 +9,9 @@ description: About me and my contacts. Stas Spiridonov, Stanislav Spiridonov
 
 My name is Stanislav Spiridonov, I\`m a software engineer and enthusiast. I\`m currently working at [Cloud Castle](http://cloudcastlegroup.com/) as a Ruby developer. I was born in Siberia and now I live in Samara, Russia.
 
-What else would you like to know? I\`m into metal music. I play guitar and record covers by myself. I draw pencil portraits and really love it. I\`m single. I\`m a long distance runner and former weightlifter. I like travelling and taking photos.
+What else would you like to know? I\`m into metal music. I play guitar and record covers by myself. Sometimes I help my friends with sound recording and mixing. I also draw pencil portraits and really love it. I\`m single. I\`m a calisthenic guy, long distance runner and former weightlifter. I like travelling and taking photos.
 
-I\`m open for hire. It\`s interesting for me to try different kinds of projects, simple ones as well as large applications. If you have an idea for a project, I'd love to discuss it with you.
+I\`m open for hire. It\`s interesting for me to try different kinds of projects, simple ones as well as large applications. If you have an idea for a project, I'd love to discuss it with you. Also feel free to contact me if you have any offers on music or sound recording.
 
 ## Contact information
 

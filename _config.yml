@@ -7,7 +7,7 @@ title: spiridonov.pro
 subtitle: 
 author: Stanislav Spiridonov
 simple_search:
-description:
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -95,6 +95,9 @@ disqus_show_comment_count: false
 
 # Google Analytics
 google_analytics_tracking_id: UA-34926149-1
+
+# Yandex.Metrika
+yandex_metrika_id: 24668864
 
 # Facebook Like
 facebook_like: false
