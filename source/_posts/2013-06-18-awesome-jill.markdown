@@ -5,7 +5,7 @@ comments: true
 language: en
 ---
 
-[{% img center /images/drawings/jh_600.jpg %}](/images/drawings/jh.jpg)
+[{% img center /images/drawings/jh_600.jpg Jill and Aubrey %}](/images/drawings/jh.jpg)
 
 Awesome Jill and her daughter Aubrey.
 

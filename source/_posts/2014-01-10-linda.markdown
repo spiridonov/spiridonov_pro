@@ -6,6 +6,6 @@ comments: true
 description: Pencil portrait of Linda Liukas, Finland.
 ---
 
-[{% img center /images/drawings/ll_500.jpg %}](/images/drawings/ll.jpg)
+[{% img center /images/drawings/ll_500.jpg Linda Liukas %}](/images/drawings/ll.jpg)
 
 Awesome Finnish girl [Linda Liukas](http://lindaliukas.fi). Kindest and brightest girl I've ever seen. Check out her [Little Ruby](http://konichiwaruby.tumblr.com) book.

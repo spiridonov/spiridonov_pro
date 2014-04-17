@@ -5,6 +5,6 @@ language: en
 comments: true
 ---
 
-[{% img center /images/drawings/ru_500.jpg %}](/images/drawings/ru.jpg)
+[{% img center /images/drawings/ru_500.jpg Rita Usacheva %}](/images/drawings/ru.jpg)
 
 I drew this portrait in my hotel room in West Palm Beach for Rita's birthday. She is amazing:)
