@@ -5,7 +5,7 @@ language: en
 description: About me and my contacts. Stas Spiridonov, Stanislav Spiridonov
 ---
 
-{% img profile-image /images/about.jpg %}
+{% img profile-image /images/about.jpg It's me:) %}
 
 My name is Stanislav Spiridonov, I\`m a software engineer and enthusiast. I\`m currently working at [Cloud Castle](http://cloudcastlegroup.com/) as a Ruby developer. I was born in Siberia and now I live in Samara, Russia.
 

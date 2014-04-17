@@ -5,7 +5,7 @@ language: ru
 description: Обо мне, мои контакты. Стас Спиридонов, Станислав Спиридонов
 ---
 
-{% img profile-image /images/about.jpg %}
+{% img profile-image /images/about.jpg Это я:) %}
 
 Меня зовут Станислав Спиридонов. Я инженер. В настоящий момент работаю в компании [Cloud Castle](http://cloudcastlegroup.com/) Ruby-программистом. Родом из суровой Сибири. Живу и работаю в Самаре.
 
