@@ -7,6 +7,17 @@ comments: true
 
 I read mostly articles and blog posts from different sources every day. Zite and Pocket are my best friends. But sometimes I read books, you know, these huge epub/pdf files with hundreds of pages. And here I want to share some of them with you.
 
+## Convict Conditioning
+
+{% img right /images/books/convict_conditioning.jpg Convict Conditioning %}
+
+This book is about forgotten art of bodyweight training. System behind that is progressive calisthenics for strength training. The Big Six movements form a core of that system: pushups, squats, pullups, leg raises, bridges, and handstand pushups.
+
+[Full artice](/2014/05/04/convict-conditioning)
+
+---
+
+
 ## Carb Back Loading 1.0
 
 {% img right /images/books/carb_back_loading.jpg Carb Back Loading %}
