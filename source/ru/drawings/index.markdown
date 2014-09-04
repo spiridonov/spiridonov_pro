@@ -7,6 +7,7 @@ comments: true
 description: Мои карандашные рисунки и портреты. Красивые девушки, друзья, знаменитости.
 ---
 
+[{% img border /images/drawings/am_250.jpg Анаит М. 2014 %}](/images/drawings/am.jpg)
 [{% img border /images/drawings/ll_250.jpg Линда Л. 2014 %}](/images/drawings/ll.jpg)
 [{% img border /images/drawings/jh_250.jpg Джилл и Обри. 2013 %}](/images/drawings/jh.jpg)
 [{% img border /images/drawings/ru_250.jpg Рита У. 2013 %}](/images/drawings/ru.jpg)
