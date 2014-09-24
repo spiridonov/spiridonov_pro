@@ -25,6 +25,7 @@ comments: true
 * Him
 * The Offspring
 * Train
+* Bonaparte
 * Yellow Card
 * The Smashing Pumpkins
 * Garbage

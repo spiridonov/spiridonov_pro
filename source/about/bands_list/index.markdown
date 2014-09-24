@@ -25,6 +25,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Him
 * The Offspring
 * Train
+* Bonaparte
 * Yellow Card
 * The Smashing Pumpkins
 * Garbage
