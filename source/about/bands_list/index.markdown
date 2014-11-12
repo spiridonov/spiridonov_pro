@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Metal bands I've seen live
+title: Bands I've seen live
 language: en
 description: List of all concerts I have visited so far. Metallica, Black Sabbath, Slipknot and more.
 comments: true
@@ -13,17 +13,20 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Slipknot
 * Slayer
 * Iron Maiden
+* Cannibal Corpse
 * Limp Bizkit
+* Anthrax
 * Deftones
+* Arch Enemy
 * Apocalyptica
 * Mastodon
-* Anthrax
 * Soulfly
 * The Prodigy
 * Napalm Death
 * Alice In Chains
 * Him
 * The Offspring
+* Yoav
 * Train
 * Bonaparte
 * Yellow Card

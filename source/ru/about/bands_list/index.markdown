@@ -13,17 +13,20 @@ comments: true
 * Slipknot
 * Slayer
 * Iron Maiden
+* Cannibal Corpse
 * Limp Bizkit
+* Anthrax
 * Deftones
+* Arch Enemy
 * Apocalyptica
 * Mastodon
-* Anthrax
 * Soulfly
 * The Prodigy
 * Napalm Death
 * Alice In Chains
 * Him
 * The Offspring
+* Yoav
 * Train
 * Bonaparte
 * Yellow Card

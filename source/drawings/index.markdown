@@ -7,6 +7,7 @@ language: en
 description: My pencil drawings, portraits. Beautiful girls, friends, celebrities.
 ---
 
+[{% img border /images/drawings/is_250.jpg Iya S. 2014 %}](/images/drawings/is.jpg)
 [{% img border /images/drawings/am_250.jpg Anait M. 2014 %}](/images/drawings/am.jpg)
 [{% img border /images/drawings/ll_250.jpg Linda L. 2014 %}](/images/drawings/ll.jpg)
 [{% img border /images/drawings/jh_250.jpg Jill and Aubrey. 2013 %}](/images/drawings/jh.jpg)
