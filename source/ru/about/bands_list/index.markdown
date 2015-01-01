@@ -16,6 +16,7 @@ comments: true
 * Cannibal Corpse
 * Limp Bizkit
 * Anthrax
+* Rage
 * Deftones
 * Arch Enemy
 * Apocalyptica

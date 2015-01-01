@@ -16,6 +16,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Cannibal Corpse
 * Limp Bizkit
 * Anthrax
+* Rage
 * Deftones
 * Arch Enemy
 * Apocalyptica

@@ -1,0 +1,67 @@
+---
+layout: post
+title: RailsClub 2014
+date: 2015-01-01
+comments: true
+language: en
+---
+
+{% img center /images/railsclub-2014/title.jpg Aaron Patterson and poo-lang %}
+
+In September 2014 I visited [RailsClub](http://railsclub.ru) conference in Moscow again. I had a long vacation trip before that, so Moscow was the last leg of it.
+
+Thanks to all the organizers! Great speakers, great venue, great breakfast and lunch:) I definitely will go to RailsClub next time.
+
+As always talks are not the main thing here. I've got more from talking with people behind the stage, met new boys and girls, seen old freinds. But here are some highlights from talks I've listened to there.
+
+## Erik Michaels-Ober
+Erik told about different optimizations you can use in your Ruby code on different levels. Here are some things from a source level:
+
+* `Symbol#to_proc` is faster than block
+* parallel assignment is slower
+* `block.call` is slower than `yield`
+* use `flat_map` instead of `map` and `flatten(1)`
+* `merge!` is faster than `merge` (of course, where possible)
+* don't use `gsub` to change only one occurrence
+* `String#tr` instead of `gsub`
+
+Every app is unique. Don't take anyone's word, try all benchmarks against your specific code and find faster solution. Use `benchmark.ips`.
+
+## Alexander Balashov
+Some obvious things: code review is cool, skype is not suitable for discussing code, etc. Also he as a sponsor advertised [teatro](https://teatro.io) and [vexor](https://vexor.io).
+
+## Tendelove
+Talk of the day. Aaron shared with us some useful stuff for memory profiling Ruby apps. Discussed problems he faced with testing AR. Admitted that rack has no future because of fundamental problems. That's why he started working on [The Metal](https://github.com/tenderlove/the_metal). We all can help him with ideas and feedback.
+
+## Bozhidar Batsov
+His English vocabulary is almost perfect. Maybe because he is a perfectionist. But when I heard his Bulgarian accent (which is very similar to Russian accent) I realized that mine wasn't so bad. Although I find his strong Bulgarian accent sexy:)
+
+Natural languages and programming languages are similar. We make sentences complicated with extra words. Avoid them. Use active voice to highlight action. And yes, use Rubocop to check your code.
+
+## Jonas Nicklas
+Basics of concurrency. There was nothing new for me. Especially with my hardcore concurrency experience I had on my previous job.
+
+## Kirill Gorin
+They use Rails (surprisingly for me) in Coub. They don't use carrierwave and are not afraid of reinventing the wheel. Attachments are a corner stone of thier service. They process millions of files every day, with different codecs and resolutions, images and sounds. So they need thier own infrastructure for storing and processing attachments.
+
+## Group discussion
+Where to store business logic? Guys tried to joke, becuase there is no ultimate solution actually. If you write an app with complex business logic you shouldn't use Rails or at least activerecord. Good news is that Rails team started working on activeform. Community moves slowly towards service objects, forms and PORO.
+
+## Kirill Timofeev
+Hardcore talk on lambda calculus, yay! Smart and funny guy. He was visiting Ukraine with this talk recently. Ukraine doesn't let Russian men from 16 to 60 enter the country now. So border officers wanted him to present this talk rigth there as a proof. Lambda calculus is hard, it is not for border officers for sure...
+
+## Ravil Bayramgalin
+He is extremely smart guy, but unfortunately not a good speaker. He shared his experience in processing huge streams of data with Ruby. I can't use in my work right now because of our domain.
+
+## Lightning talks
+[@niquola](https://twitter.com/niquola) again on Use Case Driven Architecture. Again he had not enough time for this important topic.
+
+## Sandi Metz
+She couldn't come to Russia, so talk was online instead. We looked at Sandi's face on a big screen, while she was in her small office with bookshelves on the background. I guess she's spent a lot of time prepearing to this talk, because handreds of steps of a refactoring from the beginning to the end were shown.
+
+Make things simple. Don't be afraid of code duplication, because wrong abstraction is even worse. You must have tests before refactoring started. You must have your tests green. If you don't understand business logic, trust existing tests and try to do your best.
+
+## Afterparty
+It seemed everybody was shy to come to speakers. But not me. I joined thier table. We had a lot of beer (until the bar run out of it), discissed languages, travels, Russia, Aaron's father's brewery, cats (of course), RedHat and all the things...
+
+I've had a beer with [@tenderlove](https://twitter.com/tenderlove). This is a cool finish of my vacation:)
