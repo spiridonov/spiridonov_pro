@@ -14,10 +14,11 @@ comments: true
 * Slayer
 * Iron Maiden
 * Cannibal Corpse
-* Limp Bizkit
+* Limp Bizkit _x2_
 * Anthrax
 * Rage
 * Deftones
+* Sepultura
 * Arch Enemy
 * Apocalyptica
 * Mastodon
@@ -26,7 +27,7 @@ comments: true
 * Napalm Death
 * Alice In Chains
 * Him
-* The Offspring
+* The Offspring _x2_
 * Yoav
 * Train
 * Bonaparte
@@ -42,7 +43,7 @@ comments: true
 * Gary Numan
 * Frank Turner
 * Band Of Skulls
-* Reel Big Fish
+* Reel Big Fish _x2_
 * Edward Sharpe & The Magnetic Zeros
 * Tarja Turunen
 * Skank Anansie

@@ -14,10 +14,11 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Slayer
 * Iron Maiden
 * Cannibal Corpse
-* Limp Bizkit
+* Limp Bizkit _x2_
 * Anthrax
 * Rage
 * Deftones
+* Sepultura
 * Arch Enemy
 * Apocalyptica
 * Mastodon
@@ -26,7 +27,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Napalm Death
 * Alice In Chains
 * Him
-* The Offspring
+* The Offspring _x2_
 * Yoav
 * Train
 * Bonaparte
@@ -42,7 +43,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Gary Numan
 * Frank Turner
 * Band Of Skulls
-* Reel Big Fish
+* Reel Big Fish _x2_
 * Edward Sharpe & The Magnetic Zeros
 * Tarja Turunen
 * Skank Anansie
