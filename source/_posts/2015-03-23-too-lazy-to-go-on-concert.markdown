@@ -20,7 +20,7 @@ And don't tell me that _new line up of band X sucks_ or _a venue Y sucks_ or _th
 
 ## My wish list
 
-As you may know, I have a [list of bands](/about/bands-list) I've seen live. I also have kind of a wish list. Some concerts heve been already booked and I hope they will not be cancelled. I will see others as soon as I have a chance.
+As you may know, I have a [list of bands](/about/bands-list) I've seen live. I also have kind of a wish list. Some concerts have been already booked and I hope they will not be cancelled. I will see others as soon as I have a chance.
 
 * Lamb of God (Moscow, June 2015)
 * Gojira (Moscow, June 2015)
