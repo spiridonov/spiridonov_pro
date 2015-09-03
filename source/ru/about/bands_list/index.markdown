@@ -8,13 +8,15 @@ comments: true
 
 Здесь я попытался вспомнить все группы, на чьих концертах я побывал. Некоторых из них я видел больше одного раза. В этом списке только зарубежные коллективы, потому что список с русскими будет слишком длинным, да и мне будет сложно всех вспомнить.
 
-* Metallica
+* Metallica _x2_
 * Black Sabbath
 * Slipknot
 * Slayer
 * Iron Maiden
+* Machine Head
 * Cannibal Corpse
 * Limp Bizkit _x2_
+* Linkin Park
 * Anthrax
 * Rage
 * Deftones
@@ -25,6 +27,8 @@ comments: true
 * Soulfly
 * The Prodigy
 * Napalm Death
+* In Extremo
+* Vader
 * Alice In Chains
 * Him
 * The Offspring _x2_

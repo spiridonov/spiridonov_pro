@@ -8,13 +8,15 @@ comments: true
 
 Here is a list of bands I\`ve seen live so far... well, at least bands I can remember. And I\`ve seen some of them for several times. I don\`t count Russian bands here, such list would be too long and it would be a bigger problem for me to remember them all.
 
-* Metallica
+* Metallica _x2_
 * Black Sabbath
 * Slipknot
 * Slayer
 * Iron Maiden
+* Machine Head
 * Cannibal Corpse
 * Limp Bizkit _x2_
+* Linkin Park
 * Anthrax
 * Rage
 * Deftones
@@ -25,6 +27,8 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Soulfly
 * The Prodigy
 * Napalm Death
+* In Extremo
+* Vader
 * Alice In Chains
 * Him
 * The Offspring _x2_
