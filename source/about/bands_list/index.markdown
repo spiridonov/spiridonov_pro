@@ -6,16 +6,19 @@ description: List of all concerts I have visited so far. Metallica, Black Sabbat
 comments: true
 ---
 
+{% img center /images/bands_list.jpg %}
+
 Here is a list of bands I\`ve seen live so far... well, at least bands I can remember. And I\`ve seen some of them for several times. I don\`t count Russian bands here, such list would be too long and it would be a bigger problem for me to remember them all.
 
 * Metallica _x2_
 * Black Sabbath
+* AC/DC
 * Slipknot
 * Slayer
 * Iron Maiden
 * Machine Head
 * Cannibal Corpse
-* Limp Bizkit _x2_
+* Limp Bizkit _x3_
 * Linkin Park
 * Anthrax
 * Rage
@@ -25,6 +28,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Apocalyptica
 * Mastodon
 * Soulfly
+* Eluveitie
 * The Prodigy
 * Napalm Death
 * In Extremo

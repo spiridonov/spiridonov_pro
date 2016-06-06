@@ -1,0 +1,27 @@
+---
+layout: post
+title: Learning and distractions
+date: 2016-01-19
+comments: true
+language: en
+---
+
+{% img center /images/learning-and-distractions/title.jpg %}
+
+I want to learn more. I have a lot of books to read, interesting topics to study and news to follow. The problem is how to find free time to do all these things. I do not want to sacrifice my sleeping time. It is too important to feel good and recover after heavy training. Maybe it would be possible to cut some time by adopting polyphasic sleep. But I haven't tried this yet and none of my friends have (Have you tried? Write a comment below). I also do not want to damage my main job, my health and relationships. So I decided not to change my schedule and lifestyle drastically and just mix it with daily activities.
+
+Listening to a podcast, lecture or audiobook requires a certain level of concentration. To properly follow a topic and absorb information while listening I need to avoid any other conscious activities. So listening to a podcast during programming (or any other working activity) damages one of the two. This doesn't happen with listening to music, it is just an entertainment and doesn't distract from a job. However listening to podcasts is doable along with unconcious activities such as driving a car (dangerous though), eating and cooking, walking, etc. My iPod nano helps me here. I synchronize podcasts via iTunes, so I always have a list of played/unplayed episodes and I'm able to continue listening from any point where I stopped earlier.
+
+I also have an old iPad mini. This is probably the most profitable investment in gadgets I've ever done. I mostly use it to read (iBooks, Pocket, formerly Zite) and watch (Coursera, YouTube, TED, etc). I always have it with me, so I can utilize any available time slot such as waiting in a queue, commuting or connection flight.
+
+As you can see there is an easy way to fit reading/listening/learning into your daily activities. However I found this way problematic and inefficitent. Here is why.
+
+Trying to fit reading/learning into all available time slots you introduce context switching. Context switching is a jump between different tasks. It completely kicks you out of flow and resets your cache and RAM. For example when I develop something I run tests to check what I've done so far. Unfortunately my tests are slow and take 3 to 10 minutes to run. It looks so attractive to spend those minutes checking email/twitter or reading one page of a book. However this is enough to switch you completely from your current task. On the other hand these 10 minutes is not enough to fully absorb an information you've just read. So it looks like a waste of energy. Now I'd better close my eyes and let them rest, or look outside of a window to check out the sky and the city. Because it is better to let the mind rest a bit than switch it and reload with a new task and then switch back.
+
+Even though listening can easily be combined with unconscious things (eating, for example) it distracts you form these things anyway. In case of eating you do not pay attention to your food, this affects digestion process and deprives of joy. Instead of being a process of tasting delicious food, enjoying it and filling your body with new energy, eating becomes a mechanical process of putting food into your stomach, because your mind is focused on a math equation or a recent news from the industry you are listening about.
+
+This is not a complete disaster though. I found that context switching dangerous only in case of small time slots. Reading a book while waiting in a queue is somewhat reasonable if this queue is longer than 20-30 minutes (lets say you have an hour). This is enough for your mind to dive into a topic and learn something new.
+
+I want to learn more. So I will look for another approach to do this. I found a thought somewhere on the internet: _Time management is a bullshit. Manage your energy instead._ Maybe this is the right hint. Instead of switching a lot between tasks, maybe I need just to focus on one task for a long time, finish it quickly (with time limit from the top) and move to another task (and big chunk of time). To dedicate an unbroken hour just to read and only read, and so on.
+
+What is your approach? How do you manage your energy and time? Where do you find time to learn?

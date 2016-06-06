@@ -4,12 +4,12 @@ title: Make them suffer / Actors internal state
 date: 2015-10-08
 comments: true
 language: en
-description: Dealing with concurrency and internal state of Akka actors. Make them suffer is a series of posts about Akka and Scala.
+description: Dealing with concurrency and internal state of Akka actors. Make them suffer is a series of posts about Scala and Akka.
 ---
 
-{% img center /images/make-them-suffer-1/title.jpg %}
+{% img center /images/make-them-suffer/title-1.jpg %}
 
-Originally actors were defined in the 1973 paper by Carl Hewitt, long before Cannibal Corpse band was formed (in 1988). Later actor model have been popularized by the Erlang language. _Make them suffer_ is a series of posts where I'm gonna talk about another popular implementation of actor model – [Akka Framework](http://akka.io) for Scala.
+Originally [actors](https://en.wikipedia.org/wiki/Actor_model) were defined in the 1973 paper by Carl Hewitt, long before Cannibal Corpse band was formed (in 1988). Later actor model have been popularized by the Erlang language. _Make them suffer_ is a series of posts where I'm gonna talk about Scala and its popular implementation of actor model – [Akka Framework](http://akka.io).
 
 Actor model makes it easy to write concurrent code by avoiding locks and synchronizations. Actor system guarantees that each actor processes messages from its mailbox _sequentally_ and _one at a time_. In case of Akka, there is a thread pool behind the scenes, so each actor is executed on a single thread. However you should be careful anyway and follow some rules in order to write safe Akka/Scala code. Here are these rules which I've found in books and through blood and pain of my own Scala experience.
 
@@ -135,6 +135,6 @@ class ManiacActor(addressResolver: ActorRef) extends Actor {
 }
 {% endcodeblock %}
 
-Ask pattern is a nice tool which simply gives you a `Future` with an answer when you `ask` any actor to return something. It is cool yet dangerous. Behind the scenes it creates temporary actor and wait to receive just one message with many tricky consequences of that. I will cover it later in another post. For now we just need to know that lambda in `map` will be executed somewhere on another thread. It encloses upper scope so we can use, for example, variables `name` and `address`, which is extremely convinient. However it also encloses instnance's private variables. And poor you if you are gonna change actor's state from this lambda! This is a tricky part. To avoid problems with concurrency here, follow a simple rule: __`pipe` futures to `self` and change internal state only in `receive` function directly__.
+Ask pattern is a nice tool which simply gives you a `Future` with an answer when you `ask` any actor to return something. It is cool yet dangerous. Behind the scenes it creates temporary actor and wait to receive just one message with many tricky consequences of that. I will cover it later in another post. For now we just need to know that lambda in `map` will be executed somewhere on another thread. It closes over upper scope so we can use, for example, variables `name` and `address`, which is extremely convinient. However it also closes over instnance's private variables. And poor you if you are gonna change actor's state from this lambda! This is a tricky part. To avoid problems with concurrency here, follow a simple rule: __`pipe` futures to `self` and change internal state only in `receive` function directly__.
 
 _Now you know how to handle actors internal state and avoid concurrency problems in Akka. In the next posts I will cover more tricky parts of it. Comments are welcome! Happy hAkking!;)_
