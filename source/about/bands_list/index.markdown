@@ -29,10 +29,11 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Mastodon
 * Soulfly
 * Eluveitie
-* The Prodigy
+* The Prodigy _x2_
 * Napalm Death
 * In Extremo
 * Vader
+* Caliban
 * Alice In Chains
 * Him
 * The Offspring _x2_

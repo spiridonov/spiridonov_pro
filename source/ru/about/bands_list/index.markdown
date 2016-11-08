@@ -29,10 +29,11 @@ comments: true
 * Mastodon
 * Soulfly
 * Eluveitie
-* The Prodigy
+* The Prodigy _x2_
 * Napalm Death
 * In Extremo
 * Vader
+* Caliban
 * Alice In Chains
 * Him
 * The Offspring _x2_
