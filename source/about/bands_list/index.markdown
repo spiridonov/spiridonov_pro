@@ -12,7 +12,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 
 * Metallica _x2_
 * Black Sabbath
-* AC/DC
+* AC/DC _(with Axl Rose)_
 * Slipknot
 * Slayer
 * Iron Maiden

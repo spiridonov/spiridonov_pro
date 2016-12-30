@@ -12,7 +12,7 @@ comments: true
 
 * Metallica _x2_
 * Black Sabbath
-* AC/DC
+* AC/DC _(with Axl Rose)_
 * Slipknot
 * Slayer
 * Iron Maiden

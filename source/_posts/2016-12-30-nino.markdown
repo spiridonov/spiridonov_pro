@@ -1,0 +1,11 @@
+---
+layout: post
+title: Portraits / Nino A.
+date: 2016-12-30
+comments: true
+language: en
+---
+
+[{% img center /images/drawings/na_500.jpg Nino Antauri %}](/images/drawings/na.jpg)
+
+I haven't been drawing for quite a long time. Now I am back!
