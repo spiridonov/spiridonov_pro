@@ -6,7 +6,7 @@ description: List of all concerts I have visited so far. Metallica, Black Sabbat
 comments: true
 ---
 
-{% img center /images/bands_list.jpg %}
+{% img center /images/concerts.jpg %}
 
 Here is a list of bands I\`ve seen live so far... well, at least bands I can remember. And I\`ve seen some of them for several times. I don\`t count Russian bands here, such list would be too long and it would be a bigger problem for me to remember them all.
 
@@ -22,6 +22,7 @@ Here is a list of bands I\`ve seen live so far... well, at least bands I can rem
 * Linkin Park
 * Anthrax
 * Rage
+* Amon Amarth
 * Deftones
 * Sepultura
 * Arch Enemy

@@ -9,3 +9,5 @@ comments: true
 
 After all difficulties and delays I\`ve just presented the portrait. You know, I usually
 draw each girl only once. But Alexandra is the only exception:)
+
+*Take a look at all my drawings [here](/drawings)*

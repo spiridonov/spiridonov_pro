@@ -9,3 +9,5 @@ comments: true
 [{% img center /images/drawings/al_500.jpg %}](/images/drawings/al.jpg)
 
 Я даже не знаю, что написать... Она мне просто очень нравится:)
+
+*Остальные портреты можно посмотреть [тут](/ru/drawings)*

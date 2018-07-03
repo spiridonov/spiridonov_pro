@@ -9,3 +9,5 @@ language: en
 [{% img center /images/drawings/na_500.jpg Nino Antauri %}](/images/drawings/na.jpg)
 
 I haven't been drawing for quite a long time. Now I am back!
+
+*Take a look at all my drawings [here](/drawings)*

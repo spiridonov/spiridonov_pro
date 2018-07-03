@@ -10,21 +10,13 @@ comments: true
 
 ## Оборудование
 
-Я относительно редко меняю оборудование, чаще докупаю что-то новое. Сегодня я использую:
-
 * Edwards E-LP-92CD (Gibson 500T + Gibson 496R) 
 * ESP KH-2 (EMG 81 + EMG 60A)
-* ENGL e530
 * Korg Pitchblack
 * BOSS BF-2
-* Maxon OD-2
-* BOSS CS-3
-* BOSS NS-2
 * DigiTech Whammy V
-* Voodoo Lab ISO-5
 * Ernie Ball Strings
 * Dunlop Tortex 1mm
-* Monster Rock Cables
 * Ebow
 * PreSonus AudioBox 22VSL
 * Sennheiser HD 650
@@ -32,6 +24,12 @@ comments: true
 
 В прошлом у меня были еще вот эти ребята:
 
+* ENGL e530
+* Maxon OD-2
+* BOSS CS-3
+* BOSS NS-2
+* Voodoo Lab ISO-5
+* Monster Rock Cables
 * MXR Phase 90
 * D'Addario Strings
 * Seymour Duncan Pickups
@@ -127,7 +125,7 @@ comments: true
 
 * * *
 
-### As I Lay Dying_Seperation
+### As I Lay Dying – Seperation
 
 <audio controls="control" preload="none" src="/audio/As_I_Lay_Dying_Seperation.mp3" type="audio/mp3">
 
