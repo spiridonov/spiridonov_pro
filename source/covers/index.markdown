@@ -17,7 +17,6 @@ Sometimes I play guitar and record songs of my favorite bands. When I recorded m
 * DigiTech Whammy V
 * Ernie Ball Strings
 * Dunlop Tortex 1mm
-* Ebow
 * PreSonus AudioBox 22VSL
 * Sennheiser HD 650
 * Yamaha HS5
@@ -28,6 +27,7 @@ I also used to have a lot of other stuff:
 * Maxon OD-2
 * BOSS CS-3
 * BOSS NS-2
+* Ebow
 * Voodoo Lab ISO-5
 * Monster Rock Cables
 * MXR Phase 90
