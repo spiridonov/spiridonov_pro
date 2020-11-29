@@ -37,6 +37,9 @@ page '/*.txt', layout: false
 #   end
 # end
 
+set :yandex_metrika, "24668864"
+set :google_analytics, "UA-34926149-1"
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
