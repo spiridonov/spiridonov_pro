@@ -1,0 +1,176 @@
+en:
+  - title: "My web app is not just a blog"
+    slug: my-app-is-not-a-blog
+    date: 2016-12-08
+  - title: "New concert experience"
+    slug: new-concert-experience
+    date: 2016-05-23
+  - title: "Learning and distractions"
+    slug: learning-and-distractions
+    date: 2016-01-19
+  - title: "My journey in programming"
+    slug: my-journey
+    date: 2015-12-24
+  - title: "Make them suffer: Scala implicit hell"
+    slug: scala-implicit-hell
+    date: 2015-10-14
+  - title: "Make them suffer: Actors internal state"
+    slug: akka-internal-state
+    date: 2015-10-08
+  - title: "Too lazy to go on a concert?"
+    slug: too-lazy-to-go-on-concert
+    date: 2015-03-23
+  - title: "Jupiter Ascending"
+    slug: jupiter-ascending
+    date: 2015-02-08
+  - title: "Reading: Unwritten Laws of Engineering"
+    slug: unwritten-laws-of-engineering
+    date: 2015-02-01
+  - title: "Strong joints and good posture"
+    slug: stretching-joints-posture
+    date: 2015-01-23
+  - title: "RailsClub 2014"
+    slug: railsclub-2014
+    date: 2015-01-01
+  - title: "Reading: Convict Conditioning"
+    slug: convict-conditioning
+    date: 2014-05-04
+  - title: "Reading: Carb Back Loading"
+    slug: carb-back-loading
+    date: 2014-04-09
+  - title: "Cover: Lamb of God - Desolation"
+    slug: desolation
+    date: 2014-03-24
+  - title: "Cover: RATM - Killing in the Name"
+    slug: killing-in-the-name
+    date: 2014-03-16
+  - title: "Cover: Gojira - L&#39;Enfant sauvage"
+    slug: gojira
+    date: 2014-03-02
+  - title: "Reading: Actors in Scala"
+    slug: actors-in-scala
+    date: 2014-02-21
+  - title: "Rubinius 2.0, rbenv and RubyMine"
+    slug: rubinius-and-rubymine
+    date: 2012-09-18
+  - title: "Ruby gotchas"
+    slug: ruby-gotchas
+    date: 2012-08-28
+  - title: "I migrated to Octopress before it was mainstream"
+    slug: i-migrated-to-octopress-before-it-was-mainstream
+    date: 2012-08-23
+ru:
+  - title: "Как получить визу в Великобританию"
+    slug: uk-visa
+    date: 2014-07-21
+  - title: "Отчет со Стачки 2014"
+    slug: nastachku-2014
+    date: 2014-04-16
+  - title: "Мысли о тренировках. Часть 1"
+    slug: gym1
+    date: 2014-03-10  
+  - title: "Практика иностранного языка"
+    slug: how-to-practice-language
+    date: 2014-03-15
+  - title: "Американский язык. Часть 2"
+    slug: american-english-2
+    date: 2013-12-01
+  - title: "Американский язык"
+    slug: american-english
+    date: 2013-10-09
+  - title: "Едем в Майями"
+    slug: miami-trip
+    date: 2013-06-27
+  - title: "Отчёт о 404fest`12"
+    slug: 404fest-2012
+    date: 2012-10-12
+  - title: "Кавер: KoЯn – Blind"
+    slug: korn
+    date: 2012-07-01
+  - title: "Source of Tits 2"
+    slug: tits2
+    date: 2012-06-20
+  - title: "Отчёт о MS DevCon`12"
+    slug: msdevcon
+    date: 2012-06-12
+  - title: "В гостях у Parallels"
+    slug: parallels
+    date: 2012-06-01
+  - title: "Плоть и механика. HR Giger"
+    slug: hr-giger
+    date: 2012-05-31    
+  - title: "Музей техники Apple"
+    date: 2012-05-31
+    slug: apple    
+  - title: "Манифест 2012"
+    slug: manifesto
+    date: 2012-01-19
+  - title: "Берегите уши"
+    slug: ear
+    date: 2012-01-18
+  - title: "Квартирный пролог"
+    slug: prolog
+    date: 2012-01-09
+  - title: "Автоматизированная система управления сиськами"
+    slug: tits
+    date: 2012-01-06
+  - title: "Сладкие сны"
+    slug: sleep
+    date: 2011-12-04
+  - title: "Квартира"
+    slug: apartament
+    date: 2011-10-29
+  - title: "Отчёт о 404fest`11"
+    slug: 404fest
+    date: 2011-10-03
+  - title: "Бесцельные люди"
+    slug: void
+    date: 2011-09-27
+  - title: "Отчёт о второй встрече SAPDUG"
+    slug: sapdug
+    date: 2011-09-17
+  - title: "Производить мусор"
+    slug: pollution
+    date: 2011-09-17
+  - title: "Апдейт ящика"    
+    slug: pedalboard-update
+    date: 2011-08-19
+  - title: "О красивых женщнах"    
+    slug: beauty
+    date: 2011-08-14
+  - title: "Кейс для педалей"    
+    slug: pedalboard
+    date: 2011-08-11
+  - title: "Домашний бюджет"    
+    slug: money
+    date: 2011-08-10
+  - title: "Отчёт о московском концерте Slipknot"
+    slug: slipknot
+    date: 2011-07-07
+  - title: "Церковь Святого Стива"
+    slug: macbookpro
+    date: 2011-07-07
+  - title: "Кавер: Amatory - Нить длиною в жизнь"
+    slug: amatory
+    date: 2011-06-26
+  - title: "Отчёт о Agile Camp Самара`11"
+    slug: agilecamp
+    date: 2011-06-18
+  - title: "Отчёт о Android May Days"
+    slug: android-may-days
+    date: 2011-05-10
+  - title: "Музыка, деньги и хлеб"
+    slug: muzyka-dengi-i-xleb
+    date: 2011-04-28 
+  - title: "Чему учат фильмы-боевики?"
+    slug: chemu-uchat-filmy-boeviki
+    date: 2011-04-24
+  - title: "С днём рождения:)"
+    slug: birthday
+    date: 2012-02-19
+  - title: "Кавер: Hatebreed - Undiminished"
+    slug: hatebreed-cover
+    date: 2011-03-26
+  - title: "Накрутка голосов на PHP на пальцах"
+    slug: nakrutka-golosov-na-php-na-palcax
+    date: 2011-03-11

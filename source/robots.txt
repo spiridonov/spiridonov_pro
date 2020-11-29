@@ -1,3 +1,0 @@
-User-agent: *
-Host: spiridonov.pro
-Sitemap: http://spiridonov.pro/sitemap.xml

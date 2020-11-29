@@ -1,0 +1,72 @@
+concerts:
+  - band: Metallica
+    note: (x2)
+  - band: Black Sabbath
+  - band: AC/DC
+    note: (with Axl Rose)
+  - band: Slipknot
+    note: (x2)
+  - band: Slayer
+  - band: Iron Maiden
+  - band: Machine Head
+  - band: Gojira
+    note: (x3)
+  - band: Judas Priest
+  - band: Cannibal Corpse
+  - band: Limp Bizkit
+    note: (x3)
+  - band: Hatebreed
+  - band: Linkin Park
+  - band: Anthrax
+  - band: Children of Bodom
+  - band: Rage
+  - band: Kalmah
+  - band: Amon Amarth
+  - band: Deftones
+  - band: Sepultura
+  - band: Arch Enemy
+  - band: Apocalyptica
+  - band: Mastodon
+  - band: Soulfly
+  - band: Eluveitie
+  - band: Swallow the Sun
+  - band: Uriah Heep
+  - band: The Prodigy
+    note: (x2)
+  - band: P.O.D.
+  - band: Napalm Death
+  - band: In Extremo
+  - band: Behemoth
+  - band: Vader
+  - band: Caliban
+  - band: Jimmy Eat World
+  - band: Nonpoint
+  - band: Alice In Chains
+  - band: Him
+  - band: The Offspring
+    note: (x2)
+  - band: Agnostic Front
+  - band: The Obituary
+  - band: Vreid
+  - band: Yoav
+  - band: Train
+  - band: Bonaparte
+  - band: Yellow Card
+  - band: The Smashing Pumpkins
+  - band: Garbage
+  - band: The Winery Dogs
+  - band: Carcass
+  - band: Airbourne
+  - band: Ghost
+  - band: Anti-Flag
+  - band: The Defiled
+  - band: Volbeat
+  - band: Gary Numan
+  - band: Frank Turner
+  - band: Band Of Skulls
+  - band: Reel Big Fish
+    note: (x2)
+  - band: Edward Sharpe & The Magnetic Zeros
+  - band: Tarja Turunen
+  - band: Skank Anansie
+  - band: ZAZ

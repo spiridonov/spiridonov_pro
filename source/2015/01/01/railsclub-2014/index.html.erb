@@ -1,0 +1,79 @@
+---
+title: "RailsClub 2014"
+title_image: "railsclub-2014/title.jpg"
+date: 2015-01-01
+language: en
+---
+
+<p>In September 2014 I visited <a href="http://railsclub.ru">RailsClub</a> conference in Moscow again. I had a long vacation trip before that, so Moscow was the last leg of it.</p>
+
+<p>Thanks to all the organizers! Great speakers, great venue, great breakfast and lunch:) I definitely will go to RailsClub next time.</p>
+
+<p>As always talks are not the main thing here. I&rsquo;ve got more from talking with people behind the stage, met new boys and girls, seen old freinds. But here are some highlights from talks I&rsquo;ve listened to there.</p>
+
+<h2 id="erik-michaels-ober">Erik Michaels-Ober</h2>
+
+<p>Erik told about different optimizations you can use in your Ruby code on different levels. Here are some things from a source level:</p>
+
+<ul>
+  <li><code>Symbol#to_proc</code> is faster than block</li>
+  <li>parallel assignment is slower</li>
+  <li><code>block.call</code> is slower than <code>yield</code></li>
+  <li>use <code>flat_map</code> instead of <code>map</code> and <code>flatten(1)</code></li>
+  <li><code>merge!</code> is faster than <code>merge</code> (of course, where possible)</li>
+  <li>don&rsquo;t use <code>gsub</code> to change only one occurrence</li>
+  <li><code>String#tr</code> instead of <code>gsub</code></li>
+</ul>
+
+<p>Every app is unique. Don&rsquo;t take anyone&rsquo;s word, try all benchmarks against your specific code and find faster solution. Use <code>benchmark.ips</code>.</p>
+
+<h2 id="alexander-balashov">Alexander Balashov</h2>
+
+<p>Some obvious things: code review is cool, skype is not suitable for discussing code, etc. Also he as a sponsor advertised <a href="https://teatro.io">teatro</a> and <a href="https://vexor.io">vexor</a>.</p>
+
+<h2 id="tendelove">Tendelove</h2>
+
+<p>Talk of the day. Aaron shared with us some useful stuff for memory profiling Ruby apps. Discussed problems he faced with testing AR. Admitted that rack has no future because of fundamental problems. That&rsquo;s why he started working on <a href="https://github.com/tenderlove/the_metal">The Metal</a>. We all can help him with ideas and feedback.</p>
+
+<h2 id="bozhidar-batsov">Bozhidar Batsov</h2>
+
+<p>His English vocabulary is almost perfect. Maybe because he is a perfectionist. But when I heard his Bulgarian accent (which is very similar to Russian accent) I realized that mine wasn&rsquo;t so bad. Although I find his strong Bulgarian accent sexy:)</p>
+
+<p>Natural languages and programming languages are similar. We make sentences complicated with extra words. Avoid them. Use active voice to highlight action. And yes, use Rubocop to check your code.</p>
+
+<h2 id="jonas-nicklas">Jonas Nicklas</h2>
+
+<p>Basics of concurrency. There was nothing new for me. Especially with my hardcore concurrency experience I had on my previous job.</p>
+
+<h2 id="kirill-gorin">Kirill Gorin</h2>
+
+<p>They use Rails (surprisingly for me) in Coub. They don&rsquo;t use carrierwave and are not afraid of reinventing the wheel. Attachments are a corner stone of thier service. They process millions of files every day, with different codecs and resolutions, images and sounds. So they need thier own infrastructure for storing and processing attachments.</p>
+
+<h2 id="group-discussion">Group discussion</h2>
+
+<p>Where to store business logic? Guys tried to joke, becuase there is no ultimate solution actually. If you write an app with complex business logic you shouldn&rsquo;t use Rails or at least activerecord. Good news is that Rails team started working on activeform. Community moves slowly towards service objects, forms and PORO.
+</p>
+
+<h2 id="kirill-timofeev">Kirill Timofeev</h2>
+
+<p>Hardcore talk on lambda calculus, yay! Smart and funny guy. He was visiting Ukraine with this talk recently. Ukraine doesn&rsquo;t let Russian men from 16 to 60 enter the country now. So border officers wanted him to present this talk rigth there as a proof. Lambda calculus is hard, it is not for border officers for sure&hellip;</p>
+
+<h2 id="ravil-bayramgalin">Ravil Bayramgalin</h2>
+
+<p>He is extremely smart guy, but unfortunately not a good speaker. He shared his experience in processing huge streams of data with Ruby. I can&rsquo;t use in my work right now because of our domain.</p>
+
+<h2 id="lightning-talks">Lightning talks</h2>
+
+<p><a href="https://twitter.com/niquola">@niquola</a> again on Use Case Driven Architecture. Again he had not enough time for this important topic.</p>
+
+<h2 id="sandi-metz">Sandi Metz</h2>
+
+<p>She couldn&rsquo;t come to Russia, so talk was online instead. We looked at Sandi&rsquo;s face on a big screen, while she was in her small office with bookshelves on the background. I guess she&rsquo;s spent a lot of time prepearing to this talk, because handreds of steps of a refactoring from the beginning to the end were shown.</p>
+
+<p>Make things simple. Don&rsquo;t be afraid of code duplication, because wrong abstraction is even worse. You must have tests before refactoring started. You must have your tests green. If you don&rsquo;t understand business logic, trust existing tests and try to do your best.</p>
+
+<h2 id="afterparty">Afterparty</h2>
+
+<p>It seemed everybody was shy to come to speakers. But not me. I joined thier table. We had a lot of beer (until the bar run out of it), discissed languages, travels, Russia, Aaron&rsquo;s father&rsquo;s brewery, cats (of course), RedHat and all the things&hellip;</p>
+
+<p>I&rsquo;ve had a beer with <a href="https://twitter.com/tenderlove">@tenderlove</a>. This is a cool finish of my vacation:)</p>

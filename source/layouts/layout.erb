@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <% if current_page.data.description %>
+      <meta name="description" content="<%= current_page.data.description %>">
+    <% end %>
+    <% if current_page.data.title %>
+      <title><%= current_page.data.title %> - spiridonov.pro</title>
+    <% else %>
+      <title>spiridonov.pro</title>
+    <% end %>
+    <%= stylesheet_link_tag 'style' %>
+  </head>
+  <body>
+    <%= partial "partials/header" %>
+    <% if current_page.data.title %>
+      <h1><%= current_page.data.title %></h1>
+    <% end %>
+    <% if current_page.data.date %>
+      <em><%= current_page.data.date.strftime('%d %B %Y') %></em>
+    <% end %>
+    <% if current_page.data.title_image %>
+      <p><%= tag :img, :src => "/images/#{current_page.data.title_image}", :class => "title" %></p>
+    <% end %>
+    <%= yield %>
+    <%= partial "partials/footer" %>
+  </body>
+</html>

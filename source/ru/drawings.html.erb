@@ -1,0 +1,14 @@
+---
+title: Мои рисунки
+language: ru
+description: Мои карандашные рисунки и портреты. Красивые девушки, друзья, знаменитости.
+comments: true
+---
+
+<p><em>Картинки кликабельны</em></p>
+
+<p>
+<% data.drawings.portraits.each do |d| %>
+<a href="<%= "/images/drawings/#{d[:image]}.jpg" %>"><%= tag :img, :src => "/images/drawings/#{d[:image]}_250.jpg", :alt => d[:caption] %></a>
+<% end %>
+</p>

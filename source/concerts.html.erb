@@ -1,0 +1,15 @@
+---
+title: Bands I have seen live
+title_image: concerts.jpg
+language: en
+description: List of all concerts I have visited so far. Metallica, Black Sabbath, Slipknot and more.
+comments: true
+---
+
+<p>Here is a list of bands I&rsquo;ve seen live so far... well, at least while it was possible before pandemic. And I&rsquo;ve seen some of them for several times. I don&rsquo;t count Russian bands here, such list would be too long and it would be a bigger problem for me to remember them all.</p>
+
+<ul>
+  <% data.concerts.concerts.each do |c| %>
+    <li><%= c[:band] %><% if c[:note] %> <em><%= c[:note] %></em><% end %></li>
+  <% end %>
+</ul>

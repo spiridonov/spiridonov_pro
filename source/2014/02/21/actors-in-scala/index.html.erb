@@ -1,0 +1,15 @@
+---
+title: "Reading: Actors in Scala"
+title_image: "actors-in-scala/cover.jpg"
+date: 2014-02-01
+language: en
+description: "My review on Actors in Scala book. There is a question to Erlang and Scala developers about design patterns of actor systems."
+---
+
+<p>I knew about actors since I started learning Erlang. Now I&rsquo;m playing around Scala and Akka framework, which was inspired mostly by Erlang actors.</p>
+
+<p>There is one simple rule for actors: do not expose internal actors state. But actually it&rsquo;s not so trivial to build a large (even medium) actor system. I was looking for <em>design patterns</em> and <em>best practices</em> for actor systems. How to manage dependencies (both supervising and message passing)? How to build a good protocol (set of possible messages)? How to change internal state and behavior properly (<em>become()</em> in akka)? And so forth&hellip;</p>
+
+<p>So I found <strong>Actors in Scala</strong> book. Getting ahead of myself: I haven&rsquo;t got what I was looking for:) This book starts with covering basics of concurrency. It seems obvious, but anyway I&rsquo;ve got several new points for me. Main part describes Scala Actors API, which is pretty much the same as Akka API. BTW there is a letter from Martin saying that Akka will probably be included into Scala standard library in future releases instead of Scala Actors. And finally there are couple of chapters covering Akka API.</p>
+
+<p>This book is a good introduction into Scala actors, especially if you are new to the idea of actors. It has&rsquo;t answered my questions about design of large systems. Maybe I will find them in Erlang/OTP bibles. Erlangers, what can you recommend?</p>

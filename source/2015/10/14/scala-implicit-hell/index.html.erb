@@ -1,0 +1,83 @@
+---
+title: "Make them suffer: Scala implicit hell"
+title_image: "make-them-suffer/title-2.jpg"
+date: 2015-10-14
+language: en
+description: "Scala implicit hell. Implicit parameters, implicit conversions. Handling dependencies. Make them suffer is a series of posts about Scala and Akka."
+---
+
+<p><em>Make them suffer</em> is a series of posts about Scala and Akka. <a href="/2015/10/08/akka-internal-state">Previously</a> we discussed how to avoid concurrency problems and keeping internal actors state isolated in Akka. In this episode I want to show you why Scala code looks so magical and hard to undersrand. But I&rsquo;m gonna start with a long introduction.</p>
+
+<h2 id="dependencies-everywhere">Dependencies everywhere</h2>
+
+<p>Dealing with dependencies has been always painful. It doesn&rsquo;t really depend on a size of a project. You start feeling this pain after some period of time, when you add new features into existing project or do refactorings. They also make harder to test your code.</p>
+
+<p>Depending on a programming language there are different kinds of dependencies. Global variable is the simpliest one (in C, Delphi, etc). Or it could be any kind of global state: singletons, static fields, global configs, thread locals, etc (basically any language ever). Or service A needs service B to do its duties. Even when you refer to class X (to create an instance of it) from the inside of class Y, it is also a dependency.</p>
+
+<p>As time goes people collect useful experience and extract smart ideas into form of books (GoF is a must read book). Some things are considered as anti-patterns now (such as singletons, global variables, etc). Other things have been born to organize this mess (policy pattern, etc). The main recommendation how to deal with dependencies is: <strong>do not refer to anything from the inside, instead pass dependencies explicitly from the outside</strong>. This is called <a href="https://en.wikipedia.org/wiki/Inversion_of_control">inversion of control</a>.</p>
+
+<p>It works, yes. Your code is less coupled now and easier to refactor and test. But in a big project code gets bloated with zillions of arguments passed all around, long function calls and boilerplate code. Different techniques exist to solve this problem. <a href="https://en.wikipedia.org/wiki/Dependency_injection">Dependency injection</a> is one of them. Popular DI frameworks (Spring, Guice, etc) do some magic and bind dependencies at run-time, so you don&rsquo;t need to create objects and pass dependencies to it manually. Usually they use bytecode manipulations or reflection (annotations) to construct objects and inject dependencies.</p>
+
+<p>Unfortunately some languages do not support any runtime magic or bytecode manipulations, so automatic injections are not possible. <a href="https://en.wikipedia.org/wiki/Service_locator_pattern">Service locator</a> pattern helps in this case. A class could ask service locator to give any service it needs (usually by name or interface) at run-time.</p>
+
+<h2 id="scalas-implicits">Scala&rsquo;s implicits</h2>
+
+<p>Scala creators knew about this problem and suggested thier solution to it. Dependencies should be solved at compile-time yet boilerplate code should be reduced as much as possible. Syntatically! So, yeah&hellip; Meet <strong>implicit parameters</strong>. They are passed to functions implicitly, hence the name. Implicit parameters has no runtime performance cost at all. This resolving is done completely at compile-time. Yes, Scala compiler is slow. It does many many things and resolving implicit parameters is one of them. When compiler meets a function with an implicit parameter it looks up a variable of particular type in a current scope. If it finds nothing – it explodes. If it finds more than one variable of this type – it explodes as well.</p>
+
+<p>The next simple example shows the main advantage of implicit parameters:</p>
+
+<pre>
+<code>
+import scala.concurrent._
+import scala.concurrent.ExecutionContext.Implicits.global
+
+val beast = hell.createBeastFor(credentials)
+val f: Future[Option[Blood]] = Future {
+  beast.rape(user)
+}
+</code>
+</pre>
+
+<p>To execute a future an execution context is needed. In poorly designed systems it probably would be like that: there would be just one global thread pool directly used from the inside of futures implementation, a pool would be configured from a global config file (or whatever), there would be no way to use two different pools for different purposes, and so forth.</p>
+
+<p>The implementation of <code>Future</code> in Scala is not coupled to any execution context. At the same time the code for creating a future looks sexy. How? Lets take a look at <code>scala.concurrent.Future</code> companion object&rsquo;s <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.concurrent.Future$">documentation</a>:</p>
+
+<pre>
+<code>
+def apply[T](body: => T)(implicit execctx: ExecutionContext): Future[T]
+</code>
+</pre>
+
+<p>There are two arguments: <code>body</code> and <code>execctx</code>. The latter is implicit and there is no need to pass it every single time you create a future. If you are ok with default execution context you can just <code>import scala.concurrent.ExecutionContext.Implicits.global</code> and that&rsquo;s it! If you really need a spicific execution context you can set an implicit <code>val</code> with this context near correspondent future creation, or you can even pass this argument explicitly.</p>
+
+<p>A rule of thumb is not to use general types for implicit parameters. It easily could happen that several implicit <code>String</code> variables are presented in a scope for different purposes. With concrete services like <code>ExecutionContext</code> it works ok.</p>
+
+<p>Then Scala creators went even crazier and introduced implicit conversions. This is a typesafe way to extend existing classes. Monkeypatching in Ruby serves the similar purpose, but always in a horrible and dangerous way. Lets take a look at classic example:</p>
+
+<pre>
+<code>
+(1 to 5).foreach(println)
+</code>
+</pre>
+
+<p>Expression <code>1 to 5</code> creates a <code>Range</code>. The thing is that there is no method <code>to</code> in the <code>Int</code> class (<code>1</code> is <code>Int</code> obviously). This method <a href="http://www.scala-lang.org/api/rc/index.html#scala.runtime.RichInt">exists</a> in <code>RichInt</code> class. But how does the compiler deside to use <code>RichInt</code> class here instead of <code>Int</code>? Thanks to <a href="https://github.com/scala/scala/blob/27da46343cd545534819300235bc64ab74958c92/src/library/scala/Predef.scala#L477">this implicit conversion</a>. It&rsquo;s a double win, they said: <code>Int</code> class is still clear from methods not related directly to integers, and a code for creating ranges looks sexy.</p>
+
+<h2 id="infinite-misery">Infinite misery</h2>
+
+<p>Scala programming goes together with pain. Implicits make Scala code look sexy yet impossible to understand. Sad but true, it is easy to write, but not to understand. A huge part of Scala&rsquo;s magic is done by implicits. Dependencies are resolved at compile-time, you write less code, there is no boilerplate, classes are loosely coupled, everything is extendable yet still typesafe. But reading a code in a book, article or existing project requires two times more mental power to follow a path. It is common to use package objects with implicits, so there is no way to eyeball that this small import on top of a file feeds several function calls with implicit variables. Even worse, it is impossible to understand from a code that this particular function call needs implicits.</p>
+
+<p>IDE doesn&rsquo;t really help. My IDEA doesn&rsquo;t warn me when I lack of necessary implicit variables in a scope. Compiler tells me that. IDE warns me when it could not infer a type of an expression though, usually because of forgotten implicit conversions. I should always keep implicits in mind and go to a function declaration or documentation every time I have a problem. IDEA does highligh expressions where implicit conversion is used. <code>Ctrl + Q</code> and <code>Cmd + Shift + P</code> help to dig into a code a bit. But when I forget implicit variables it keeps silent.</p>
+
+<p>There are well known hells in programming: callback hell, DLL hell, etc. I&rsquo;ve met the term <em>implicit hell</em> about Scala only once on the Internet, but I can&rsquo;t deny it. This is the second biggest problem I have with Scala. The first one is the fact that it is hard to convince your boss using Scala:)</p>
+
+<p><em>What do you think? Are implicits a problem for you?</em></p>
+
+<h2 id="more-links-on-the-topic">More links on the topic</h2>
+
+<ul>
+  <li><a href="http://docs.scala-lang.org/tutorials/tour/implicit-parameters.html">Implicit parameters</a> in Scala doc</li>
+  <li><a href="http://docs.scala-lang.org/tutorials/FAQ/finding-implicits.html">Where does Scala look for implicits</a></li>
+  <li><a href="http://www.drmaciver.com/2008/03/an-introduction-to-implicit-arguments/">An introduction to implicit arguments</a></li>
+  <li><a href="http://docs.scala-lang.org/overviews/core/implicit-classes.html">Implicit classes</a> in Scala doc</li>
+  <li><a href="http://docs.scala-lang.org/tutorials/FAQ/chaining-implicits.html">How can I chain implicit conversions?</a></li>
+</ul>

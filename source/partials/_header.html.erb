@@ -1,0 +1,14 @@
+<center>
+    <h1>spiridonov.pro</h1>
+
+    <% if current_page.data.language == "ru" %>
+        <a href="<%= url_for "/ru.html" %>"><b>Обо мне</b></a> |
+        <a href="<%= url_for "/ru/posts.html" %>"><b>Блог</b></a> |
+        <a href="<%= url_for "/" %>"><b>In English</b></a>
+    <% else %>
+        <a href="<%= url_for "/" %>"><b>About me</b></a> |
+        <a href="<%= url_for "/posts.html" %>"><b>Blog</b></a> |
+        <a href="<%= url_for "/ru.html" %>"><b>По-русски</b></a>
+    <% end %>
+</center>
+<br/>

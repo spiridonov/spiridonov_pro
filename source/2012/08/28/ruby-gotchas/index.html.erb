@@ -1,0 +1,135 @@
+---
+title: "Ruby gotchas"
+date: 2012-08-28
+language: en
+---
+
+<p><%= tag :img, :src => "/images/ruby-gotchas/wtf.jpg" %></p>
+
+<h2 id="automatic-class-loading-gotcha">Automatic class loading gotcha</h2>
+
+<p>There are several Rails models. Of course each class is located in separate file.</p>
+
+<pre><code>
+class Human
+  #...
+end
+
+class Human::Head
+  #...
+end
+
+class AlabamaMan < Human
+  #...
+end
+
+class AlabamaMan::Head < Human::Head
+  #...
+end
+
+class MonicaBellucci < Human
+  #...
+end
+
+class MonicaBellucci::Head < Human::Head
+  #...
+end
+</code>
+</pre>
+
+<p>It looks OK. Yes? But there is one hidden problem, I wouldn`t write an article
+into my blog if there was no one:) Lets go to Rails console:</p>
+
+<pre>
+<code>
+irb(main):001:0&gt; Human
+=&gt; Human
+irb(main):002:0&gt; Human::Head
+=&gt; Human::Head
+irb(main):003:0&gt; AlabamaMan::Head
+=&gt; Human::Head
+</code>
+</pre>
+
+<p>Wtf!? Reopen console and try again:</p>
+
+<pre>
+<code>
+irb(main):001:0&gt; AlabamaMan::Head
+=&gt; AlabamaMan::Head
+irb(main):002:0&gt; MonicaBellucci::Head
+=&gt; Human::Head
+irb(main):003:0&gt; Human::Head
+=&gt; Human::Head
+</code>
+</pre>
+
+<p>The problem occurs only in development Rails environment because of automatic class loading. When we ask for <code>Human::Head</code> Ruby tries to find constant <code>Head</code> in <code>Human</code> module. It doesn`t find and then tries to load class <code>Human::Head</code>. Then we ask for <code>AlabamaMan::Head</code>. Ruby doesn`t find constant <code>AlabamaMan</code>, loads correspondent class and then tries to find <code>Head</code> there. Of course there is no <code>Head</code> yet and Ruby tries to find it in parent class. Ooooopss!</p>
+
+<p>The same shit happens in the second time. <code>AlabamaMan::Head</code> loads:</p>
+
+<ul>
+  <li><code>AlabamaMan</code> - because there is no <code>AlabamaMan</code></li>
+  <li><code>Human</code> - as the parent of <code>AlabamaMan</code></li>
+  <li><code>AlabamaMan::Head</code> - because there is no <code>Head</code> neither in <code>AlabamaMan</code> nor in <code>Human</code></li>
+  <li><code>Human::Head</code> - as the parent of <code>AlabamaMan::Head</code></li>
+</ul>
+
+
+<p>And <code>MonicaBellucci::Head</code> returns parents <code>Human::Head</code> for the same reason&hellip;</p>
+
+<p>This doesn`t happen in production environment and with files required manually via <code>require 'somefile'</code>.</p>
+
+<h2 id="constant-name-resolution-gotcha">Constant name resolution gotcha</h2>
+
+<pre><code>
+A = 1
+
+module Foo
+  A = 2
+
+  class Bar
+    def self.method1
+      A
+    end
+  end
+end
+
+class Foo::Bar
+  def self.method2
+    A
+  end
+end
+
+module Foo
+  class Bar
+    def self.method3
+      A
+    end
+  end
+end
+</code>
+</pre>
+
+<p>Lets check it in Rails console:</p>
+
+<pre>
+<code>
+irb(main):001:0&gt; Foo::Bar.method1
+=&gt; 2
+irb(main):002:0&gt; Foo::Bar.method2
+=&gt; 1
+irb(main):003:0&gt; Foo::Bar.method3
+=&gt; 2
+</code>
+</pre>
+
+<p>There is a difference between <code>Foo::Bar</code> and <code>module Foo ... class Bar</code>, remember that! When we declare Bar inside Foo module, Bar gets lexical scope of Foo.</p>
+
+<h2 id="related-links">Related links</h2>
+
+<ul>
+  <li><a href="http://patshaughnessy.net/2012/7/26/objects-classes-and-modules">Pat Shaughnessy - Objects, Classes and Modules</a></li>
+  <li><a href="http://shime.github.com/blog/2012/08/06/overriding-instance-method-with-module-method/">Overriding instance method with module</a></li>
+  <li><a href="http://coderrr.wordpress.com/2008/03/11/constant-name-resolution-in-ruby/">Module.nesting and constant name resolution in Ruby</a></li>
+</ul>

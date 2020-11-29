@@ -1,0 +1,149 @@
+---
+title: "Make them suffer: Actors internal state"
+title_image: "make-them-suffer/title-1.jpg"
+date: 2015-10-08
+language: en
+description: "Dealing with concurrency and internal state of Akka actors. Make them suffer is a series of posts about Scala and Akka."
+---
+
+<p>Originally <a href="https://en.wikipedia.org/wiki/Actor_model">actors</a> were defined in the 1973 paper by Carl Hewitt, long before Cannibal Corpse band was formed (in 1988). Later actor model have been popularized by the Erlang language. <em>Make them suffer</em> is a series of posts where I&rsquo;m gonna talk about Scala and its popular implementation of actor model – <a href="http://akka.io">Akka Framework</a>.</p>
+
+<p>Actor model makes it easy to write concurrent code by avoiding locks and synchronizations. Actor system guarantees that each actor processes messages from its mailbox <em>sequentally</em> and <em>one at a time</em>. In case of Akka, there is a thread pool behind the scenes, so each actor is executed on a single thread. However you should be careful anyway and follow some rules in order to write safe Akka/Scala code. Here are these rules which I&rsquo;ve found in books and through blood and pain of my own Scala experience.</p>
+
+<h2 id="mutable-state">Mutable state</h2>
+
+<pre>
+<code>
+import scala.collection._
+import akka.actor._
+
+class BrutalActor extends Actor {
+  private val hammerSmashedFaces: mutable.Set[Face] = mutable.Set.empty
+
+  def receive: Receive = {
+    case Smash(face) =>
+      hammerSmashedFaces += face
+    case GetTotalDeaths =>
+      sender ! hammerSmashedFaces.size
+  }
+}
+</code>
+</pre>
+
+<p>With this guarantee in mind you can easily use private mutable collections, <code>var</code>s and pretty much everything inside your actor instance without locks and synchronizations. It is safe to mutate collections and assign variables inside <code>receive</code> method, bacause the framework will never call it concurrently in different threads. That&rsquo;s why writing applications with actors is so cool. However, it is not absolutely safe and easy.</p>
+
+<h2 id="becomeunbecome">Become/Unbecome</h2>
+
+<p>If you are not fine with mutable variables, for you there is another way to carry internal state inside of an actor. Lets take a look at Erlang example:</p>
+
+<pre>
+<code>
+blood_pool(Blood) ->
+  receive
+    bye ->
+      io:format("Bye bye~n", []);
+    {add, Gallons} ->
+      blood_pool(Blood + Gallons)
+    {get_blood_volume, Sender} ->
+      Sender ! Blood
+      blood_pool(Blood)
+  end.
+</code>
+</pre>
+
+<p>Erlang has no mutable variable and data structures, but it has tail call optimization. Inside the <code>blood_pool</code> process there is a <code>receive</code> call, which blocks until there is at least one message in a mailbox. If you want to process just one message and quit, then simply do nothing after that. When you want to process messages constantly you need to call a process recursively (to call <code>receive</code> again and again). As a side effect of this approach you can store internal state as function arguments and change it between messages, using only immutable data structures. True funtional way.</p>
+
+<p>Akka took that approach and made it even better. Akka allows you to switch behavior on the fly with <code>become</code> method. So we can rewrite our previous example:</p>
+
+<pre>
+<code>
+import scala.collection.immutable._
+import akka.actor._
+
+class BrutalActor extends Actor {
+  def destroyEverything(hammerSmashedFaces: Set[Face]): Receive = {
+    case Smash(face) =>
+      context become destroyEverything(hammerSmashedFaces + face)
+    case GetTotalDeaths =>
+      sender ! hammerSmashedFaces.size
+  }
+
+  def receive = destroyEverything(Set.empty)
+}
+</code>
+</pre>
+
+<p>You can switch between many different behaviors and even implement a finite state machine with it (for explicit use there is Akka FSM, btw). One more feature <code>become</code> has is that it can store previous behavior in a stack. By default it replaces top behavior every time, but with <code>discardOld = false</code> option you can push item on top of a stack and then pop it with <code>unbecome</code>. Be careful and <strong>make sure you have equal depths of <code>become</code> and <code>unbecome</code> calls</strong>. Also <strong>stacking behaviors too deep can cause space leaks</strong> (all these partial functions with correspondent closures will be referenced from a stack).</p>
+
+<h2 id="do-not-expose-internal-state">Do not expose internal state</h2>
+
+<p>Usually you have only an <code>ActorRef</code> which hides an instance of <code>Actor</code> from you. And <strong>you should never create an <code>Actor</code> instance manually</strong>. There are several reasons behind that, such as:</p>
+
+<ul>
+  <li>A user works with local and remote actors in the same fashion</li>
+  <li>Framework can handle actors restarts transparently for a user</li>
+  <li>Custom routing can be performed behind one <code>ActorRef</code></li>
+  <li>A user can not directly call methods on an <code>Actor</code> instance</li>
+</ul>
+
+<p>The latter safes us from mutating actor&rsquo;s state in different threads concurrently. But there is one more way to expose state outside of an actor: by sending or recieving mutable objects as messages. So here is one more rule: <strong>send only case classes and immutable collections between actors!</strong> Frankly speaking, this rule is not only for Akka. Using as much immutable data structures and <code>val</code>s in Scala as possible helps you write code faster and debug it easier.</p>
+
+<h2 id="caution-hot">Caution hot</h2>
+
+<p>I wouldn&rsquo;t have written this post if programming had been so easy. Even though you do not expose actor&rsquo;s internal state anymore, it is still possible to introduce concurrency and mutate state from different threads. How?</p>
+
+<p>Lets say we have two actors. First one performs long computation, for example address geocoding:</p>
+
+<pre>
+<code>
+object AddressResolverActor {
+  case class ResolveCoordinates(address: Address)
+}
+
+class AddressResolverActor(geocoding: Geocoding) extends Actor {
+  import AddressResolverActor._
+
+  def receive = {
+    case ResolveCoordinates(address) =>
+      sender ! geocoding.findLatLng(address)
+  }
+}
+</code>
+</pre>
+
+<p>And another one needs a result of this long computation to change its state:</p>
+
+<pre>
+<code>
+import akka.pattern.{ask, pipe}
+
+object ManiacActor {
+  case class Kill(name: String, address: Address)
+  case class AddressResolved(name: String, address: Address, coordinates: LatLng)
+}
+
+class ManiacActor(addressResolver: ActorRef) extends Actor {
+  import ManiacActor._
+  import AddressResolverActor._
+
+  private val victims: mutable.Queue[Victim] = mutable.Queue.empty
+
+  def receive = {
+    case Kill(name, address) => {
+      val addressResolvedFuture = (addressResolver ? ResolveCoordinates(address)).
+        mapTo[LatLng].
+        map(coordinates => AddressResolved(name, address, coordinates))
+
+      addressResolvedFuture pipeTo self
+    }
+
+    case AddressResolved(name, address, coordinates) =>
+      victims += Victim(name, address, coordinates)
+  }
+}
+</code>
+</pre>
+
+<p>Ask pattern is a nice tool which simply gives you a <code>Future</code> with an answer when you <code>ask</code> any actor to return something. It is cool yet dangerous. Behind the scenes it creates temporary actor and wait to receive just one message with many tricky consequences of that. I will cover it later in another post. For now we just need to know that lambda in <code>map</code> will be executed somewhere on another thread. It closes over upper scope so we can use, for example, variables <code>name</code> and <code>address</code>, which is extremely convinient. However it also closes over instnance&rsquo;s private variables. And poor you if you are gonna change actor&rsquo;s state from this lambda! This is a tricky part. To avoid problems with concurrency here, follow a simple rule: <strong><code>pipe</code> futures to <code>self</code> and change internal state only in <code>receive</code> function directly</strong>.</p>
+
+<p><em>Now you know how to handle actors internal state and avoid concurrency problems in Akka. In the next posts I will cover more tricky parts of it. Comments are welcome! Happy hAkking!;)</em></p>

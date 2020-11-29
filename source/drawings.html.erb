@@ -1,0 +1,14 @@
+---
+title: My drawings
+language: en
+description: My pencil drawings, portraits. Girls, friends, celebrities.
+comments: true
+---
+
+<p><em>Click to open a full size picture</em></p>
+
+<p>
+<% data.drawings.portraits.each do |d| %>
+<a href="<%= "/images/drawings/#{d[:image]}.jpg" %>"><%= tag :img, :src => "/images/drawings/#{d[:image]}_250.jpg", :alt => d[:caption] %></a>
+<% end %>
+</p>

@@ -1,0 +1,221 @@
+---
+title: "Rubinius 2.0, rbenv and RubyMine"
+date: 2012-09-18
+language: en
+---
+
+<p>&hellip;It was sunny Friday`s morning. My friend and I drank coffee and decided to take a look at Rubinius 2.0.0-dev. We hoped it would be enough easy to install. But we didn`t expect it to have some problems with rbenv and RubyMine as well:)</p>
+
+<p>Rubinius is an alternative Ruby implementation. In Rubinius as much of Ruby as possible is implemented in Ruby language itself. So it`s very helpful and interesting to see how some parts of Ruby core work. And it`s more interesting than digging into C code of MRI (but of course it`s helpful in some cases too). Another thing you should know - Rubinius is a thread-safe interpreter. So you may use Celluloid or Puma server with full support of threads.</p>
+
+<h2 id="installing-rubinius-20">Installing Rubinius 2.0</h2>
+
+<p>You&rsquo;ll need another version of ruby already installed as well as rake for installing Rubinius 2.0. Don`t use another version of Rubinius for installing this one:)</p>
+
+<p>Also libyaml must be installed. I use homebrew for doing this:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ brew install libyaml</code></pre></div>
+
+<p>Get the latest HEAD for rbx-2.0.0-dev and install it:</p>
+
+<pre>
+<code>
+$ git clone https://github.com/rubinius/rubinius.git
+$ cd rubinius
+$ ./configure --prefix=~/.rbenv/versions/rbx-2.0.0-dev --enable-version=1.8,1.9 --default-version=1.9
+$ rake install
+</code>
+</pre>
+
+<p>Rubinius stores gem`s bin files in distinctive folder, so rbenv doesn`t correctly work with them. Fortunately, a <a href="https://github.com/collinschaafsma/rbenv-rbx_2.0.0-dev_fix">plugin</a> exists for fixing that.</p>
+
+<pre>
+<code>
+$ mkdir -p ~/.rbenv/plugins
+$ cd ~/.rbenv/plugins
+$ git clone https://github.com/collinschaafsma/rbenv-rbx_2.0.0-dev_fix.git
+</code>
+</pre>
+
+<p>Now Rubinius is available via rbenv:</p>
+
+<pre>
+<code>
+$ rbenv shell rbx-2.0.0-dev
+$ ruby -v
+rubinius 2.0.0dev (1.9.3 72207d94 yyyy-mm-dd JI) [x86_64-apple-darwin12.1.0]
+</code>
+</pre>
+
+<h2 id="rubymine">RubyMine</h2>
+
+<p>This is a long story&hellip; :)</p>
+
+<p>We had just installed Rubinius and went to <em>Settings -&gt; Ruby SDK and Gems</em> (RubyMine version 4.5.2). Unfortunately it couldn`t find RubyGems for rbx-2.0.0-dev. It looked strange, so we went to console to make sure:</p>
+
+<pre>
+<code>
+$ rbenv shell rbx-2.0.0-dev
+$ gem list
+*** LOCAL GEMS ***
+actionmailer (3.2.8)
+actionpack (3.2.8)
+activemodel (3.2.8)
+...
+</code>
+</pre>
+
+<p>OK. Let`s have look at Rubinius folder:</p>
+
+<pre>
+<code>
+$ cd ~/.rbenv/versions/rbx-2.0.0-dev/bin
+$ ls -la
+total 32840
+drwxr-xr-x  10 stanislav  staff       340 Aug 28 18:41 .
+drwxr-xr-x   8 stanislav  staff       272 Aug 28 18:41 ..
+lrwxr-xr-x   1 stanislav  staff         3 Aug 28 18:41 gem -&gt; rbx
+lrwxr-xr-x   1 stanislav  staff         3 Aug 28 18:41 irb -&gt; rbx
+lrwxr-xr-x   1 stanislav  staff         3 Aug 28 18:41 rake -&gt; rbx
+-rwxr-xr-x   1 stanislav  staff  16781972 Aug 28 18:41 rbx
+lrwxr-xr-x   1 stanislav  staff         3 Aug 28 18:41 rdoc -&gt; rbx
+lrwxr-xr-x   1 stanislav  staff         3 Aug 28 18:41 ri -&gt; rbx
+lrwxr-xr-x   1 stanislav  staff         3 Aug 28 18:41 ruby -&gt; rbx
+-rwxr-xr-x   1 stanislav  staff       297 Aug 28 18:41 testrb
+</code>
+</pre>
+
+<p>How interesting! There are one God File <code>rbx</code> and many symbolic links to it. As you may know, <code>argv</code> contains the actual arguments, starting with index 1. Index 0 is the program name. So Rubinius looks at <code>argv[0]</code> and determines what we want it to be. Well, it`s a good idea.</p>
+
+<p>We made separate folder for experiments:</p>
+
+<pre>
+<code>
+cd /tmp
+mkdir rbx
+cd rbx
+ln -s /Users/stanislav/.rbenv/versions/rbx-2.0.0-dev/bin/rbx ruby
+</code>
+</pre>
+
+<p>Then we went to <em>Settings -&gt; Ruby SDK and Gems</em> again and saw that RubyMine resolved symbolic links. So we changed symlink to hardlink:)</p>
+
+<pre>
+<code>
+rm ruby
+ln /Users/stanislav/.rbenv/versions/rbx-2.0.0-dev/bin/rbx ruby
+</code>
+</pre>
+
+<p>I decided to watch how RubyMine ran <code>gem</code> command and created simple <code>gem</code> file which sniffs all commandline arguments of each call. I probably could use <code>fs_usage</code> or another monitoring tool, but I didn`n want that. Looking ahead, it was a right solution;)</p>
+
+<pre>
+<code>
+#!/Users/stanislav/.rbenv/versions/1.9.3-p194/bin/ruby
+
+File.open(&lsquo;log.txt&rsquo;, &lsquo;a&rsquo;) do |f|
+  f.write(&quot;#{ARGV*', &lsquo;}\n&quot;)
+end
+</code>
+</pre>
+
+<p>Run RubyMine and watch at <code>log.txt</code>:</p>
+
+<pre>
+<code>
+environment, gempath
+</code>
+</pre>
+
+<p>Hm, seems legit. Maybe we should sniff also <code>ruby</code> calls? Just copy and rename <code>gem</code> file:</p>
+
+<pre>
+<code>
+script8027539471226326548.rb
+script5012912298001198018.rb
+-v
+script8063238159134301426.rb
+-v
+script8764279234205520073.rb
+-v
+script3430463985826171909.rb
+script2853497228306159189.rb
+-x, /private/tmp/rbx/gem, environment, gempath
+-x, /private/tmp/rbx/gem, environment, gempath
+-x, /private/tmp/rbx/gem, environment, gempath
+-x, /private/tmp/rbx/gem, environment, gempath
+-x, /private/tmp/rbx/gem, environment, gempath
+</code>
+</pre>
+
+<p>Here is the problem caused by RubyMine. It tries to run <code>gem</code> as a ruby file. Actually <code>gem</code>, <code>bundle</code> and other gems binaries in MRI are ruby scripts. But in Rubinius, as you may see, <code>gem</code> is a symlink to rbx itself.</p>
+
+<p>Our solution is simple. We made ruby script which forwards all calls to normal <code>gem</code> command:</p>
+
+<pre>
+<code>
+cd /Users/Stanislav/.rbenv/versions/rbx-2.0.0-dev/
+mkdir rubymine
+cd rubymine
+ln /Users/stanislav/.rbenv/versions/rbx-2.0.0-dev/bin/rbx ruby
+touch gem
+subl gem
+</code>
+</pre>
+
+<p>Let's look at <code>/Users/Stanislav/.rbenv/versions/rbx-2.0.0-dev/rubymine/gem</code>:</p>
+
+<pre>
+<code>
+#!/Users/Stanislav/.rbenv/versions/rbx-2.0.0-dev/bin/ruby
+
+puts `/Users/Stanislav/.rbenv/versions/rbx-2.0.0-dev/bin/gem #{ARGV*' '}`
+</code>
+</pre>
+
+<p>And then let RubyMine go to this <code>~/.rbenv/versions/rbx-2.0.0-dev/rubymine/</code> folder. Enjoy!:)</p>
+
+<h2 id="debugging">Debugging</h2>
+
+<p>Unfortunately, RubyMine IDE debugger doesn`t work with Rubinius 2.0 now. We hope they will fix that in the future. It would be totally perfect if this IDE debugger worked with rbx. Anyway you`ve got all refactoring tools, code navigation and other sugar of RubyMine.</p>
+
+<p>But there is a brutal way to debug Rubinius - console debugger:) Just put this code where you want to start debug session:</p>
+
+<pre>
+<code>
+Rubinius::Debugger.start
+</code>
+</pre>
+
+<p>You will get used to it quickly. Here is the list of debugger`s commands:</p>
+
+<pre>
+<code>
+debug&gt; help
+             help: Show information about debugger commands
+    b, break, brk: Set a breakpoint at a point in a method
+ tb, tbreak, tbrk: Set a temporary breakpoint
+        d, delete: Delete a breakpoint
+          n, next: Move to the next line or conditional branch
+          s, step: Step into next method call or to next line
+        ni, nexti: Move to the next bytecode instruction
+         f, frame: Make a specific frame in the call stack the current frame
+c, cont, continue: Continue running the target thread
+    bt, backtrace: Show the current call stack
+          p, eval: Run code in the current context
+ dis, disassemble: Show the bytecode for the current method
+          i, info: Show information about things
+              set: Set a debugger config variable
+             show: Display the value of a variable or variables
+</code>
+</pre>
+
+<h2 id="related-links">Related links</h2>
+
+<ul>
+  <li><a href="http://rubini.us/">Rubinius home</a></li>
+  <li><a href="http://blog.steveklabnik.com/posts/2011-10-04-rubinius-is-awesome">Steve Klabnik about Rubinius</a></li>
+  <li><a href="http://patshaughnessy.net/2012/1/25/my-first-impression-of-rubinius-internals">My first impression of Rubinius internals</a></li>
+  <li><a href="http://rubini.us/doc/en/tools/debugger/">Debugger</a></li>
+  <li><a href="https://github.com/rubinius/rubinius">Rubinius on GitHub</a></li>
+</ul>
