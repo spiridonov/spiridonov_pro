@@ -7,8 +7,14 @@ concerts:
   - band: Slipknot
     note: (x2)
   - band: Slayer
+    note: (x2)
   - band: Iron Maiden
+  - band: Megadeth
+  - band: Lamb Of God
+  - band: Trivium
   - band: Machine Head
+  - band: KoЯn
+  - band: System Of A Down
   - band: Gojira
     note: (x3)
   - band: Judas Priest
@@ -16,18 +22,26 @@ concerts:
   - band: Limp Bizkit
     note: (x3)
   - band: Hatebreed
+    note: (x2)
   - band: Linkin Park
   - band: Anthrax
   - band: Children of Bodom
   - band: Rage
+  - band: In Flames
   - band: Kalmah
   - band: Amon Amarth
   - band: Deftones
+    note: (x2)
   - band: Sepultura
   - band: Arch Enemy
   - band: Apocalyptica
+  - band: Russian Circles
+    note: (x2)
   - band: Mastodon
+  - band: Green Day
+  - band: Fall Out Boy
   - band: Soulfly
+    note: (x2)
   - band: Eluveitie
   - band: Swallow the Sun
   - band: Uriah Heep
@@ -39,6 +53,8 @@ concerts:
   - band: Behemoth
   - band: Vader
   - band: Caliban
+  - band: Buddy Guy
+  - band: Joe Satriani
   - band: Jimmy Eat World
   - band: Nonpoint
   - band: Alice In Chains
@@ -70,3 +86,5 @@ concerts:
   - band: Tarja Turunen
   - band: Skank Anansie
   - band: ZAZ
+  - band: James Blake
+  - band: FKA Twigs
